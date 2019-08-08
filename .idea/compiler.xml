@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="base-tool" />
+        <module name="springboot-actuator-demo" />
+        <module name="springboot-demo" />
+        <module name="springboot-test" />
+        <module name="springboot-test-demo" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springboot-actuator-demo" target="1.8" />
+      <module name="springboot-test-demo" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
