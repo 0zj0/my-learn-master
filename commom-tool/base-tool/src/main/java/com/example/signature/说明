@@ -1,0 +1,22 @@
+
+
+
+业务场景说明：
+
+1、使用SHAWithRSA签名算法，兼容SHA1, SHA256, SHA512
+   使用PKCS8格式的秘钥
+   对待签名内容进行签名
+   对签名串进行校验
+   根据文件输入流加载秘钥
+   根据文件地址获取秘钥串
+
+2、AES256算法
+   AES/CBC/PKCS5Padding格式
+   16进制64位key，32位iv，转byte[]
+   加解密
+
+3、EncryptUtils
+    MD5加密
+
+4、SignUtil
+    MD5签名校验

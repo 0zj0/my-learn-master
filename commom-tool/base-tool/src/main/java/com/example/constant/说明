@@ -1,0 +1,7 @@
+consts包：
+存放及定义全局常量
+
+enums包：
+存放全局枚举类；
+
+SystemCodeEnum： 系统全局编码状态
