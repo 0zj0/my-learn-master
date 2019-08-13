@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>springboot-demo</artifactId>
+        <groupId>com.example</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>springboot-mybatisplus-demo</artifactId>
+    <packaging>jar</packaging>
+
+    <name>springboot-mybatisplus-demo Maven Webapp</name>
+
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencies>
+        <!--引用 base-mybatisplus-datasources 依赖-->
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>base-mybatisplus-datasources</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!--引用 工具包 依赖-->
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>base-tool</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+    <!--打包需要配置-->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

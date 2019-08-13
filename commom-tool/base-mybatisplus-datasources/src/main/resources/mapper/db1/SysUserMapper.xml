@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.dao.db1.SysUserDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.entity.db1.po.SysUserPO">
+        <id column="id" property="id" />
+        <result column="userName" property="userName" />
+        <result column="sex" property="sexEnum.sex" />
+        <result column="age" property="age" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, userName, sex, age
+    </sql>
+
+    <select id="listAll" resultType="com.example.entity.db1.po.SysUserPO">
+       select * from  sys_user
+    </select>
+
+</mapper>

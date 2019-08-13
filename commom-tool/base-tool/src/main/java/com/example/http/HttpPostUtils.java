@@ -1,6 +1,6 @@
 package com.example.http;
 
-import com.doyd.core.json.JsonUtils;
+import com.example.json.JsonUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.http.HttpEntity;
 import org.apache.http.NameValuePair;

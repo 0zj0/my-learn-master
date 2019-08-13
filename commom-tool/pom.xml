@@ -13,6 +13,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>base-tool</module>
+        <module>base-mysql</module>
+        <module>base-mybatisplus-datasources</module>
     </modules>
 
 
