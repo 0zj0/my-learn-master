@@ -1,0 +1,136 @@
+官方文档：https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/actuator-api/html/
+访问路径：http://localhost:8083/zj-test/actuator-test
+
+1. 配置文件：
+#actuator 显示health详细信息设置
+management.endpoint.health.show-details=always
+#/zj 必须在指定server.port 端口才会有效果
+management.server.servlet.context-path= /zj-test
+#/actuator-test 可以替换原来的actuator 访问路径，设置自定义访问
+management.endpoints.web.base-path= /actuator-test
+# * 是打开所有的端点，还有一个shutdown需要另外打开
+management.endpoints.web.exposure.include= *
+#management.endpoints.web.exposure.include= health,info
+#显式启用/shutdown端点
+management.endpoint.shutdown.enabled=true
+# 要公开所有（已启用）网络端点除env端点之外
+management.endpoints.web.exposure.exclude=env
+
+2.端点说明
+应用配置类: 获取应用程序中加载的应用配置、环境变量、自动化配置报告等于springboot应用密切相关的配置类信息；
+度量指标类: 获取应用程序运行过程中用于监控的度量指标，比如内存信息、线程池信息、http请求统计等；
+操作控制类: 提供了对应用的关闭等操作功能；
+2.1 auditevents
+    作用：该auditevents端点提供有关应用程序的审核事件的信息；
+    响应结构：
+        events  Array   一系列审计事件；
+        events.[].timestamp  String  事件发生的时间戳；
+        events.[].principal  String  触发事件的校长；
+        events.[].type  String 事件的类型；
+
+2.2 beans (应用配置类)
+    作用: 该beans端点提供有关应用程序的beans,用来获取应用上下文创建的所有bean;
+    响应结构：
+        contexts  Object  由id键入的应用程序上下文;
+        contexts.*.parentId  String  父应用程序上下文的ID（如果有）;
+        contexts.*.beans  Object  应用程序上下文中的Bean由名称键入;
+        contexts.*.beans.*.aliases  Array  任何别名的名称;
+        contexts.*.beans.*.scope  String   Bean的作用域;
+        contexts.*.beans.*.type  String  Bean的java类型;
+        contexts.*.beans.*.resource  String  class文件的具体路径;
+        contexts.*.beans.*.dependencies  Array   依赖的Bean名称;
+
+2.3 caches
+    作用：该caches终端可以访问应用程序的缓存。
+    响应结构：
+         name  String  缓存名称;
+         cacheManager  String  缓存管理器名称;
+         target  String  本机缓存的完全限定名称;
+
+2.4 health (度量指标类)
+    作用：该health端点提供有关应用程序的运行状况的详细信息，获取应用的各类健康指标信息
+    响应结构：
+        status  String  申请的总体状况(UP);
+        details  Object  组成健康的组件;
+        details.*.status  String  申请特定部分的状态;
+        details.*.details  Object  应用程序特定部分的运行状况的详细信息,存在受到控制management.endpoint.health.show-details;
+        details.*.details  Object  构成健康的嵌套组件;
+
+2.5 conditions (应用配置类)
+    作用：获取应用的自动化报告,该conditions端点提供有关的配置和自动配置类条件的评估信息;
+    响应结构：
+        contexts  Object  由id键入的应用程序上下文；
+        contexts.*.positiveMatches  Object  具有匹配条件的类和方法，条件匹配成功；
+        contexts.*.positiveMatches.*.[].condition  String  条件的名称；
+        contexts.*.positiveMatches.*.[].message  String  条件匹配原因的详细信息；
+        contexts.*.negativeMatches  Object  具有不匹配条件的类和方法，条件匹配失败；
+        contexts.*.negativeMatches.*.notMatched  Array  匹配的条件；
+        contexts.*.negativeMatches.*.notMatched.[].condition  String  条件的名称；
+        contexts.*.negativeMatches.*.notMatched.[].message  String  条件不匹配的原因的详细信息；
+        contexts.*.negativeMatches.*.matched  Array  匹配的条件；
+        contexts.*.negativeMatches.*.matched.[].condition  String   条件的名称；
+        contexts.*.negativeMatches.*.matched.[].message  Array  无条件自动配置类的名称（如果有）；
+        contexts.*.parentId  String  父应用程序上下文的ID；
+
+2.6 shutdown
+    作用：该shutdown端点被用来关闭应用程序。
+    使用：http://192.168.4.98:8083/zj-test/actuator-test/shutdown （post请求）
+
+2.7 configprops (应用配置类)
+    作用：该configprops端点提供有关应用程序的信息 @ConfigurationProperties beans,获取应用中配置的属性信息报告；
+    响应结构：
+        contexts  Object  由id键入的应用程序上下文；
+        contexts.*.beans.*   Object   @ConfigurationProperties 由bean名称键入的bean；
+        contexts.*.beans.*.prefix  String  应用于bean属性名称的前缀；
+        contexts.*.beans.*.properties  Object  bean的属性作为名称 键值对；
+        contexts.*.parentId  String  父应用程序上下文的ID（如果有）;
+
+2.8 env  (应用配置类)
+    作用：该env端点提供有关应用程序的信息Environment,获取应用所有可用的环境属性报告；
+    响应结构：
+        activeProfiles  Array  活动配置文件的名称；
+        propertySources  Array  属性来源，按优先顺序排列；
+        propertySources.[].name  String  属性源的名称；
+        propertySources.[].properties  Object  属性源中的属性由属性名称键入;
+        propertySources.[].properties.*.value  String  属性值；
+        propertySources.[].properties.*.origin  String  属性来源；
+
+2.9 info (应用配置类)
+    作用： 返回自定义信息，自定义信息格式需为info.xxx.xxx
+
+2.10 loggers
+2.11 heapdump (度量指标类)
+    作用： 该heapdump端点从应用程序的JVM提供了一个堆转储
+
+2.12 threaddump (度量指标类)
+    作用：该threaddump端点从应用程序的JVM提供了一个线程转储；
+    暴露程序中的线程信息，来自java.lang.management.ThreadMXBean的dumpAllThreads方法
+
+2.13 metrics (度量指标类)
+    作用： 返回当前应用的各类重要度量指标，比如内存信息、线程信息、垃圾回收信息等；
+    访问示例：http://192.168.4.98:8083/zj-test/actuator-test/metrics/jvm.memory.max 获取jvm最大内存信息
+    mem.*: 内存概要信息，包括分配给应用的总内存数量以及当前空闲的内存数量，这些信息来自java.lang.Runtime;
+    heap.*: 堆内存使用情况。这些信息来自Java.lang.management.MemoryMXBean 接口中的getHeadMemoryUsage方法获取的java.lang.management.MemoryUsage;
+    nonheap.*: 非堆内存使用情况。这些信息来自Java.lang.management.MemoryMXBean 接口中的getNonHeadMemoryUsage方法获取的java.lang.management.MemoryUsage;
+    threads.*: 线程使用情况，包括线程数、守护线程数（daemon）、线程峰值(peak)等，来自Java.lang.management.ThreadMXBean;
+    classes.*: 应用加载和卸载的类统计。来自Java.lang.management.ClassLoadingMXBean;
+    gc.*: 垃圾回收器的详细信息，包括垃圾回收次数gc.ps_scavenge.count、垃圾回收消耗时间gc.ps_scavenge.time、标记-清除算法的次数gc.ps_marksweep.count、
+标记-清除算法的消耗时间gc.ps_marksweep.time.来自Java.lang.management.GarbageCollectorMXBean;
+    httpsessions.*:Tomcat 容器的回话使用情况。包括最大回话数httpsessions.max和活跃会话数httpsessions.active.当引入嵌入式Tomcat有效；
+    gauge.*:Http请求的性能指标之一，它主要用来反映一个绝对数值。
+    counter.*:Http请求的性能指标之一，主要作为计数器来使用，记录了增加量和减少量；
+
+
+2.14 scheduledtasks
+2.15 httptrace (度量指标类)
+    作用：该httptrace端点提供关于HTTP请求-响应交换信息，返回基恩的HTTP跟踪信息
+
+2.16 mappings (应用配置类)
+    作用：该mappings端点提供有关应用程序的请求映射的信息，返回所有spring mvc 的控制器映射关系报告
+
+2.17 refresh
+    使用：http://192.168.4.98:8083/zj-test/actuator-test/refresh （post请求）
+
+2.18 features
+
+
