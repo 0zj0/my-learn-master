@@ -24,6 +24,7 @@
     <modules>
         <module>commom-tool</module>
         <module>business</module>
+        <module>spring-annotation</module>
     </modules>
 
     <dependencies>

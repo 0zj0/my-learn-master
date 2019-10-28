@@ -2,21 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f37b2b04-4ded-424e-9b77-eb34ff1af187" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/business/springboot-demo/springboot-actuator-demo/REDEME.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business/springboot-demo/springboot-actuator-demo/src/main/java/com/example/demo/bean/TestBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business/springboot-demo/springboot-actuator-demo/src/main/java/com/example/demo/config/TestConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business/springboot-demo/springboot-actuator-demo/src/main/java/com/example/demo/controller/SingleTestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business/springboot-demo/springboot-actuator-demo/src/main/java/com/example/demo/controller/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business/springboot-demo/springboot-actuator-demo/src/test/java/com/example/demo/IOCTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commom-tool/base-tool/src/main/java/com/example/test/LotteryProbabilityPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commom-tool/base-tool/src/main/java/com/example/test/LotteryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commom-tool/base-tool/src/main/java/com/example/utils/LotteryUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-annotation/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-annotation/src/main/java/com/example/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/Employee2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/Employee3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/EmployeeBeanPostProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/MainBeanConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/MyCondition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/MyFilterType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/PersonController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/PersonDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/PersonFactoryBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/PersonServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testImport/MainImportConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testImport/MyImportBeanDefinitionRegistrar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testImport/MyImportSelector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/springboot-demo/springboot-test/src/test/java/com/example/demo/DemoApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/springboot-demo/springboot-test/src/test/java/com/example/demo/DemoApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/springboot-demo/springboot-test/target/test-classes/com/example/demo/DemoApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/business/springboot-demo/springboot-test/target/test-classes/com/example/demo/DemoApplicationTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -30,6 +34,7 @@
     <ignored path="$PROJECT_DIR$/commom-tool/base-mybatisplus-datasources/target/" />
     <ignored path="$PROJECT_DIR$/business/springboot-demo/springboot-mybatisplus-demo/target/" />
     <ignored path="$PROJECT_DIR$/business/springboot-demo/springboot-actuator-demo/target/" />
+    <ignored path="$PROJECT_DIR$/spring-annotation/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,64 +59,65 @@
     <session id="-51211329">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.2" value="4" />
+          <entry key="project.open.time.2" value="5" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="9" />
-          <entry key="java" value="111" />
+          <entry key="class" value="16" />
+          <entry key="java" value="143" />
           <entry key="json" value="1" />
           <entry key="kt" value="1" />
           <entry key="md" value="5" />
           <entry key="mvnw" value="1" />
           <entry key="properties" value="8" />
           <entry key="txt" value="1" />
-          <entry key="xml" value="49" />
+          <entry key="xml" value="53" />
           <entry key="yml" value="8" />
           <entry key="说明" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="9" />
-          <entry key="JAVA" value="111" />
+          <entry key="CLASS" value="16" />
+          <entry key="JAVA" value="143" />
           <entry key="JSON" value="1" />
           <entry key="Kotlin" value="1" />
           <entry key="Markdown" value="5" />
           <entry key="PLAIN_TEXT" value="11" />
           <entry key="Properties" value="8" />
-          <entry key="XML" value="49" />
+          <entry key="XML" value="53" />
           <entry key="YAML" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="3" />
-          <entry key="java" value="3751" />
+          <entry key="dummy" value="8" />
+          <entry key="java" value="6083" />
           <entry key="md" value="38" />
           <entry key="properties" value="374" />
-          <entry key="txt" value="2155" />
-          <entry key="xml" value="552" />
+          <entry key="txt" value="2212" />
+          <entry key="xml" value="582" />
           <entry key="yml" value="152" />
           <entry key="说明" value="103" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3751" />
+          <entry key="JAVA" value="6083" />
           <entry key="Markdown" value="38" />
-          <entry key="PLAIN_TEXT" value="2261" />
+          <entry key="PLAIN_TEXT" value="2323" />
           <entry key="Properties" value="374" />
           <entry key="SQL" value="1" />
-          <entry key="XML" value="551" />
+          <entry key="XML" value="581" />
           <entry key="YAML" value="152" />
         </counts>
       </usages-collector>
@@ -119,53 +125,110 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/business/springboot-demo/springboot-actuator-demo/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="14" selection-start-line="14" selection-end-line="15" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/business/springboot-demo/springboot-actuator-demo/REDEME.txt">
+        <entry file="file://$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/MainBeanConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="76" column="71" selection-start-line="76" selection-start-column="71" selection-end-line="76" selection-end-column="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/business/springboot-demo/springboot-actuator-demo/HELP.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="162">
-                <caret line="6" column="113" lean-forward="true" selection-start-line="6" selection-end-line="7" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/commom-tool/base-mybatisplus-datasources/src/main/java/com/example/config/datasource/DataSourceConfigDBOne.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="41" column="24" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/business/springboot-demo/springboot-actuator-demo/src/main/java/com/example/demo/DemoApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="11" column="59" lean-forward="true" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
+            <state relative-caret-position="450">
+              <caret line="114" column="46" selection-start-line="114" selection-start-column="46" selection-end-line="114" selection-end-column="46" />
               <folding>
-                <element signature="e#367#368#0" expanded="true" />
-                <element signature="e#433#434#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1986#1987#0" expanded="true" />
+                <element signature="e#2032#2033#0" expanded="true" />
+                <element signature="e#3141#3142#0" expanded="true" />
+                <element signature="e#3178#3179#0" expanded="true" />
+                <element signature="e#3316#3317#0" expanded="true" />
+                <element signature="e#3354#3355#0" expanded="true" />
+                <element signature="e#3500#3501#0" expanded="true" />
+                <element signature="e#3538#3539#0" expanded="true" />
+                <element signature="e#3660#3661#0" expanded="true" />
+                <element signature="e#3698#3699#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/EmployeeBeanPostProcessor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="21" column="20" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://F:/mySoft/tools/maven/repo/org/springframework/spring-beans/5.1.8.RELEASE/spring-beans-5.1.8.RELEASE.jar!/org/springframework/beans/factory/config/BeanPostProcessor.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/PersonFactoryBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+              <folding>
+                <element signature="e#530#531#0" expanded="true" />
+                <element signature="e#557#558#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/Employee.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding>
+                <element signature="e#168#169#0" expanded="true" />
+                <element signature="e#195#196#0" expanded="true" />
+                <element signature="e#235#236#0" expanded="true" />
+                <element signature="e#267#268#0" expanded="true" />
+                <element signature="e#292#293#0" expanded="true" />
+                <element signature="e#330#331#0" expanded="true" />
+                <element signature="e#383#384#0" expanded="true" />
+                <element signature="e#419#420#0" expanded="true" />
+                <element signature="e#478#479#0" expanded="true" />
+                <element signature="e#514#515#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/Employee3.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="9" column="22" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#468#469#0" expanded="true" />
+                <element signature="e#529#530#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/Employee2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#290#291#0" expanded="true" />
+                <element signature="e#353#354#0" expanded="true" />
+                <element signature="e#380#381#0" expanded="true" />
+                <element signature="e#438#439#0" expanded="true" />
+                <element signature="e#468#469#0" expanded="true" />
+                <element signature="e#529#530#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -195,27 +258,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/commom-tool/base-mybatisplus-datasources/src/main/java/com/example/config/datasource/DataSourceConfigProperties.java" />
-        <option value="$PROJECT_DIR$/commom-tool/base-mybatisplus-datasources/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/commom-tool/base-mybatisplus-datasources/src/main/resources/bootstrap.yml" />
-        <option value="$PROJECT_DIR$/commom-tool/base-mybatisplus-datasources/src/main/java/com/example/config/datasource/DataSourceConfigDBOn.java" />
-        <option value="$PROJECT_DIR$/commom-tool/base-mybatisplus-datasources/src/main/java/com/example/config/datasource/MultipleTransactionSupport.java" />
-        <option value="$PROJECT_DIR$/commom-tool/base-mybatisplus-datasources/src/main/java/com/example/config/datasource/MyTransSupport.java" />
-        <option value="$PROJECT_DIR$/commom-tool/base-mybatisplus-datasources/src/main/java/com/example/config/mapper/MybatisMapper.java" />
-        <option value="$PROJECT_DIR$/commom-tool/base-mybatisplus-datasources/src/test/java/com/example/genenator/MpGenenatorTest.java" />
-        <option value="$PROJECT_DIR$/commom-tool/base-mybatisplus-datasources/src/main/java/com/example/genenator/MpGenenator.java" />
-        <option value="$PROJECT_DIR$/commom-tool/base-mybatisplus-datasources/src/main/java/com/example/entity/db2/po/OrdersPO.java" />
-        <option value="$PROJECT_DIR$/commom-tool/base-mybatisplus-datasources/src/main/java/com/example/dao/db2/OrdersDao.java" />
-        <option value="$PROJECT_DIR$/commom-tool/base-mybatisplus-datasources/src/main/resources/mapper/db2/OrdersMapper.xml" />
-        <option value="$PROJECT_DIR$/commom-tool/base-mybatisplus-datasources/src/main/java/com/example/service/db2/IOrdersService.java" />
-        <option value="$PROJECT_DIR$/commom-tool/base-mybatisplus-datasources/src/main/java/com/example/service/db2/impl/OrdersServiceImpl.java" />
-        <option value="$PROJECT_DIR$/commom-tool/base-mybatisplus-datasources/pom.xml" />
-        <option value="$PROJECT_DIR$/business/springboot-demo/springboot-mybatisplus-demo/pom.xml" />
-        <option value="$PROJECT_DIR$/commom-tool/base-tool/src/main/java/com/example/http/HttpPostUtils.java" />
-        <option value="$PROJECT_DIR$/commom-tool/base-tool/src/main/java/com/example/json/JsonUtils.java" />
-        <option value="$PROJECT_DIR$/commom-tool/base-tool/pom.xml" />
-        <option value="$PROJECT_DIR$/commom-tool/pom.xml" />
-        <option value="$PROJECT_DIR$/business/springboot-demo/pom.xml" />
         <option value="$PROJECT_DIR$/commom-tool/base-mybatisplus-datasources/src/main/java/com/example/config/datasource/DataSourceConfigDBOne.java" />
         <option value="$PROJECT_DIR$/commom-tool/base-mybatisplus-datasources/src/main/java/com/example/config/datasource/DataSourceConfigDBTwo.java" />
         <option value="$PROJECT_DIR$/commom-tool/base-mybatisplus-datasources/src/main/java/com/example/entity/db1/po/SysUserPO.java" />
@@ -246,6 +288,27 @@
         <option value="$PROJECT_DIR$/business/springboot-demo/springboot-actuator-demo/HELP.md" />
         <option value="$PROJECT_DIR$/business/springboot-demo/springboot-actuator-demo/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/business/springboot-demo/springboot-actuator-demo/REDEME.txt" />
+        <option value="$PROJECT_DIR$/business/springboot-demo/springboot-test/src/main/java/com/example/demo/test/ParamaterTest.java" />
+        <option value="$PROJECT_DIR$/business/springboot-demo/springboot-test/src/main/java/com/example/demo/test/Test1.java" />
+        <option value="$PROJECT_DIR$/business/springboot-demo/springboot-test/src/main/java/com/example/demo/test/FatherTest.java" />
+        <option value="$PROJECT_DIR$/business/springboot-demo/springboot-test/src/main/java/com/example/demo/test/SonTest.java" />
+        <option value="$PROJECT_DIR$/spring-annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/Person.java" />
+        <option value="$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/PersonController.java" />
+        <option value="$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/PersonServiceImpl.java" />
+        <option value="$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/PersonDao.java" />
+        <option value="$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/MyFilterType.java" />
+        <option value="$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/MyCondition.java" />
+        <option value="$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/MainConfig.java" />
+        <option value="$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testImport/MyImportSelector.java" />
+        <option value="$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testImport/MainImportConfig.java" />
+        <option value="$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testImport/MyImportBeanDefinitionRegistrar.java" />
+        <option value="$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/PersonFactoryBean.java" />
+        <option value="$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/Employee.java" />
+        <option value="$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/Employee2.java" />
+        <option value="$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/Employee3.java" />
+        <option value="$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/EmployeeBeanPostProcessor.java" />
+        <option value="$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/MainBeanConfig.java" />
       </list>
     </option>
   </component>
@@ -372,7 +435,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -383,51 +445,25 @@
             <path>
               <item name="my-learn-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-learn-master" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-annotation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="my-learn-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-learn-master" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my-learn-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-learn-master" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-actuator-demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my-learn-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-learn-master" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-mybatisplus-demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my-learn-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-learn-master" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-mybatisplus-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-annotation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="my-learn-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-learn-master" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-mybatisplus-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-annotation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="my-learn-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-learn-master" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-mybatisplus-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-annotation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -435,32 +471,39 @@
             <path>
               <item name="my-learn-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-learn-master" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-mybatisplus-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-annotation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mycode" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="my-learn-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-learn-master" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-mybatisplus-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-annotation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mycode" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="testBean" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-learn-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-learn-master" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-annotation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="testImport" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -470,7 +513,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567852602794" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572258439545" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/business/springboot-demo/springboot-mybatisplus-demo" />
@@ -486,12 +529,18 @@
       <recent name="com.example.demo" />
       <recent name="com.example.genenator" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\MyGit\my-learn-master\commom-tool\base-mybatisplus-datasources\src\main\resources\config" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.testBean" />
       <recent name="com.example.demo.controller" />
       <recent name="com.example.config.datasource" />
       <recent name="com.example.config.mapper" />
       <recent name="com.example.genenator" />
-      <recent name="com.example.utils" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\MyGit\my-learn-master\commom-tool\base-mybatisplus-datasources\src\main\java\com\example\service\db1\impl" />
@@ -499,12 +548,6 @@
       <recent name="F:\MyGit\my-learn-master\commom-tool\base-mybatisplus-datasources\src\main\java\com\example\service\db1" />
       <recent name="F:\MyGit\my-learn-master\commom-tool\base-mybatisplus-datasources\src\main\java\com\example\service\db2" />
       <recent name="F:\MyGit\my-learn-master\commom-tool\base-mybatisplus-datasources\src\main\resources\mapper\db1" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\MyGit\my-learn-master\commom-tool\base-mybatisplus-datasources\src\main\resources\config" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -519,9 +562,65 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoApplication (2)">
+  <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainBeanConfig" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.testBean.MainBeanConfig" />
+      <module name="springannotation" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.testBean.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainImportConfig" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.testImport.MainImportConfig" />
+      <module name="springannotation" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.testImport.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SonTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.test.SonTest" />
+      <module name="springboot-test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.test.Test1" />
+      <module name="springboot-test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -532,72 +631,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springboot-test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.DemoApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IOCTest.test001" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springboot-actuator-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.IOCTest" />
-      <option name="METHOD_NAME" value="test001" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LotteryTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="base-tool" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.test" />
-      <option name="MAIN_CLASS_NAME" value="com.example.test.LotteryTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DemoApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="springboot-test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -657,19 +692,19 @@
       <item itemvalue="Spring Boot.DemoApplication" />
       <item itemvalue="Spring Boot.SpringbootMybatisplusDemoApplication" />
       <item itemvalue="Spring Boot.SpringbootMybatisplusDemoApplication (1)" />
-      <item itemvalue="JUnit.LotteryTest.test" />
-      <item itemvalue="Spring Boot.DemoApplication (1)" />
-      <item itemvalue="JUnit.DemoApplicationTests.contextLoads" />
       <item itemvalue="Spring Boot.DemoApplication (2)" />
-      <item itemvalue="JUnit.IOCTest.test001" />
+      <item itemvalue="Application.Test1" />
+      <item itemvalue="Application.SonTest" />
+      <item itemvalue="Application.MainBeanConfig" />
+      <item itemvalue="Application.MainImportConfig" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainBeanConfig" />
+        <item itemvalue="Application.MainImportConfig" />
+        <item itemvalue="Application.SonTest" />
+        <item itemvalue="Application.Test1" />
         <item itemvalue="Spring Boot.DemoApplication (2)" />
-        <item itemvalue="JUnit.IOCTest.test001" />
-        <item itemvalue="JUnit.DemoApplicationTests.contextLoads" />
-        <item itemvalue="Spring Boot.DemoApplication (1)" />
-        <item itemvalue="JUnit.LotteryTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -691,7 +726,10 @@
       <workItem from="1566195007289" duration="7994000" />
       <workItem from="1566554363529" duration="553000" />
       <workItem from="1567678796082" duration="2596000" />
-      <workItem from="1567763961600" duration="15518000" />
+      <workItem from="1567763961600" duration="15889000" />
+      <workItem from="1568949768104" duration="113000" />
+      <workItem from="1569051249237" duration="4403000" />
+      <workItem from="1572226656566" duration="15816000" />
     </task>
     <task id="LOCAL-00001" summary="工具类 添加">
       <created>1565336687867</created>
@@ -707,7 +745,21 @@
       <option name="project" value="LOCAL" />
       <updated>1565685579912</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="添加actuator 插件测试demo">
+      <created>1567852762856</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1567852762856</updated>
+    </task>
+    <task id="LOCAL-00004" summary="代码块执行顺序 测试">
+      <created>1569376892973</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1569376892973</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -743,13 +795,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63440000" />
+    <option name="totallyTimeSpent" value="84143000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21748401" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2238806" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="JRebel" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -760,8 +812,8 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.36659437" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.47505423" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.36659437" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.47505423" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -785,43 +837,6 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21748401" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="JRebel" order="2" side_tool="true" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info id="Designer" order="7" />
-      <window_info id="Web" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36659437" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.40347072" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="JRebel Executor" order="11" />
-      <window_info anchor="bottom" id="JRebel Console" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Spring" order="13" />
-      <window_info anchor="bottom" id="Java Enterprise" order="14" />
-      <window_info anchor="bottom" id="Messages" order="15" weight="0.329718" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" weight="0.32995737" />
-      <window_info anchor="right" id="Database" order="6" weight="0.32995737" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -835,7 +850,9 @@
     </ignored-roots>
     <MESSAGE value="工具类 添加" />
     <MESSAGE value="mybatisplus 添加，未解决枚举转换问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="mybatisplus 添加，未解决枚举转换问题" />
+    <MESSAGE value="添加actuator 插件测试demo" />
+    <MESSAGE value="代码块执行顺序 测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="代码块执行顺序 测试" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -860,252 +877,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/commom-tool/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/springboot-demo/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://F:/mySoft/tools/maven/repo/org/springframework/spring-context/5.1.9.RELEASE/spring-context-5.1.9.RELEASE.jar!/org/springframework/context/annotation/ConfigurationClassParser.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="122" selection-start-line="122" selection-end-line="122" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://F:/mySoft/tools/maven/repo/org/springframework/spring-beans/5.1.9.RELEASE/spring-beans-5.1.9.RELEASE.jar!/org/springframework/beans/factory/annotation/AutowiredAnnotationBeanPostProcessor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="556" selection-start-line="556" selection-end-line="556" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commom-tool/base-tool/src/main/java/com/example/beanutils/BeanCopiersUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commom-tool/base-mybatisplus-datasources/src/main/java/com/example/config/mapper/MybatisMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="55" lean-forward="true" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commom-tool/base-mybatisplus-datasources/src/main/java/com/example/config/datasource/DataSourceConfigProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://F:/mySoft/tools/maven/repo/org/mybatis/mybatis-spring/2.0.1/mybatis-spring-2.0.1.jar!/org/mybatis/spring/SqlSessionTemplate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commom-tool/base-mybatisplus-datasources/src/main/java/com/example/config/datasource/DataSourceConfigDBTwo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/springboot-demo/springboot-mybatisplus-demo/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commom-tool/base-mybatisplus-datasources/src/main/java/com/example/genenator/MpGenenator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="31" column="61" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/Iterable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="71" column="17" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://F:/mySoft/tools/maven/repo/com/baomidou/mybatis-plus-core/3.1.1/mybatis-plus-core-3.1.1.jar!/com/baomidou/mybatisplus/core/enums/IEnum.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commom-tool/base-mybatisplus-datasources/src/main/java/com/example/entity/enums/SexEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commom-tool/base-mybatisplus-datasources/src/main/java/com/example/config/datasource/MybatisPlusConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commom-tool/base-mybatisplus-datasources/src/main/java/com/example/entity/db1/po/SysUserPO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1107">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commom-tool/base-mybatisplus-datasources/src/main/java/com/example/config/datasource/MultipleTransactionSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="891">
-          <caret line="33" column="5" selection-start-line="27" selection-start-column="45" selection-end-line="33" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commom-tool/base-mybatisplus-datasources/src/main/resources/mapper/db1/SysUserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="621" column="8" selection-start-line="621" selection-start-column="8" selection-end-line="621" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commom-tool/base-mybatisplus-datasources/src/main/java/com/example/config/datasource/MybatisEnumTypeHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1593">
-          <caret line="79" column="24" selection-start-line="79" selection-start-column="12" selection-end-line="79" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commom-tool/base-tool/src/main/java/com/example/utils/LotteryUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commom-tool/base-tool/src/main/java/com/example/test/LotteryProbabilityPO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1242">
-          <caret line="46" column="21" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commom-tool/base-mybatisplus-datasources/src/main/java/com/example/service/db1/impl/SysUserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#666#667#0" expanded="true" />
-            <element signature="e#708#709#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commom-tool/base-mybatisplus-datasources/src/main/java/com/example/dao/db1/SysUserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="17" column="27" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commom-tool/base-tool/src/main/java/com/example/test/LotteryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="837">
-          <caret line="31" column="72" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/Random.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="139" column="41" selection-start-line="139" selection-start-column="12" selection-end-line="139" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/springboot-demo/springboot-test/src/main/java/com/example/demo/test/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="15" column="5" selection-start-line="13" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/springboot-demo/springboot-test/src/test/java/com/example/demo/DemoApplicationTest.java" />
-    <entry file="file://$PROJECT_DIR$/business/springboot-demo/springboot-test/src/test/java/com/example/demo/DemoApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="42" column="20" lean-forward="true" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/springboot-demo/springboot-test/src/main/java/com/example/demo/DemoApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/Math.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="815">
-          <caret line="772" column="68" selection-start-line="772" selection-start-column="68" selection-end-line="772" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/springboot-demo/springboot-test/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/springboot-demo/springboot-test/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/business/springboot-demo/springboot-actuator-demo/src/main/java/com/example/demo/controller/TestController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
@@ -1124,9 +895,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1134,9 +902,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="19" column="9" selection-start-line="17" selection-start-column="48" selection-end-line="19" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1165,9 +930,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1175,9 +937,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
           <caret line="21" selection-start-line="19" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1185,9 +944,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="6" column="59" lean-forward="true" selection-start-line="6" selection-end-line="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1205,6 +961,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/business/springboot-demo/springboot-test/src/main/java/com/example/demo/test/ParameterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+          <folding>
+            <element signature="e#155#156#0" expanded="true" />
+            <element signature="e#191#192#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/springboot-demo/springboot-test/src/main/java/com/example/demo/test/Test1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="61" column="13" lean-forward="true" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="15" />
+          <folding>
+            <element signature="e#350#351#0" expanded="true" />
+            <element signature="e#386#387#0" expanded="true" />
+            <element signature="e#386#387#0" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+            <element signature="e#602#603#0" expanded="true" />
+            <element signature="e#646#647#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/springboot-demo/springboot-test/src/main/java/com/example/demo/test/FatherTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/springboot-demo/springboot-test/src/main/java/com/example/demo/test/SonTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9">
+          <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+          <folding>
+            <element signature="e#424#425#0" expanded="true" />
+            <element signature="e#473#474#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/springboot-demo/springboot-actuator-demo/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" selection-start-line="14" selection-end-line="15" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/springboot-demo/springboot-actuator-demo/HELP.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="162">
+            <caret line="6" column="113" selection-start-line="6" selection-end-line="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/commom-tool/base-mybatisplus-datasources/src/main/java/com/example/config/datasource/DataSourceConfigDBOne.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="756">
@@ -1214,36 +1031,294 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/business/springboot-demo/springboot-actuator-demo/src/main/java/com/example/demo/DemoApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="11" column="59" lean-forward="true" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
-          <folding>
-            <element signature="e#367#368#0" expanded="true" />
-            <element signature="e#433#434#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/springboot-demo/springboot-actuator-demo/HELP.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="162">
-            <caret line="6" column="113" lean-forward="true" selection-start-line="6" selection-end-line="7" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/springboot-demo/springboot-actuator-demo/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="14" selection-start-line="14" selection-end-line="15" selection-end-column="41" />
+        <state relative-caret-position="216">
+          <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/business/springboot-demo/springboot-actuator-demo/REDEME.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="76" column="71" selection-start-line="76" selection-start-column="71" selection-end-line="76" selection-end-column="71" />
+        <state relative-caret-position="786">
+          <caret line="120" column="50" selection-start-line="120" selection-start-column="50" selection-end-line="120" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="38" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-annotation/src/main/java/com/example/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-annotation/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="788">
+          <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/PersonController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/PersonServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/PersonDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/mySoft/tools/maven/repo/org/springframework/spring-context/5.1.8.RELEASE/spring-context-5.1.8.RELEASE.jar!/org/springframework/context/annotation/ComponentScan.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="50" column="17" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/mySoft/tools/maven/repo/org/springframework/spring-context/5.1.8.RELEASE/spring-context-5.1.8.RELEASE.jar!/org/springframework/context/annotation/Scope.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/mySoft/tools/maven/repo/org/springframework/spring-context/5.1.8.RELEASE/spring-context-5.1.8.RELEASE.jar!/org/springframework/context/annotation/FilterType.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/mySoft/tools/maven/repo/org/springframework/spring-core/5.1.8.RELEASE/spring-core-5.1.8.RELEASE.jar!/org/springframework/core/type/filter/TypeFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/mySoft/tools/maven/repo/org/springframework/spring-core/5.1.8.RELEASE/spring-core-5.1.8.RELEASE-sources.jar!/org/springframework/core/type/filter/TypeFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="40" column="52" selection-start-line="39" selection-start-column="35" selection-end-line="40" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/mySoft/tools/maven/repo/org/springframework/spring-context/5.1.8.RELEASE/spring-context-5.1.8.RELEASE.jar!/org/springframework/context/annotation/Condition.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="12" column="1" selection-start-line="12" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/MyFilterType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/mySoft/tools/maven/repo/org/springframework/spring-context/5.1.8.RELEASE/spring-context-5.1.8.RELEASE-sources.jar!/org/springframework/context/annotation/Condition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="49" column="67" selection-start-line="49" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/MyCondition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/mySoft/tools/maven/repo/org/springframework/spring-context/5.1.8.RELEASE/spring-context-5.1.8.RELEASE-sources.jar!/org/springframework/context/annotation/DeferredImportSelector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="593">
+          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/mySoft/tools/maven/repo/org/springframework/spring-context/5.1.8.RELEASE/spring-context-5.1.8.RELEASE-sources.jar!/org/springframework/context/annotation/ImportSelector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="42" column="20" lean-forward="true" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testImport/MainImportConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="19" column="54" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="54" />
+          <folding>
+            <element signature="e#162#163#0" expanded="true" />
+            <element signature="e#189#190#0" expanded="true" />
+            <element signature="e#229#230#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#284#285#0" expanded="true" />
+            <element signature="e#345#346#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/mySoft/tools/maven/repo/org/springframework/spring-beans/5.1.8.RELEASE/spring-beans-5.1.8.RELEASE.jar!/org/springframework/beans/factory/FactoryBean.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testImport/MyImportBeanDefinitionRegistrar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="19" column="29" lean-forward="true" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testImport/MyImportSelector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/mySoft/tools/maven/repo/org/springframework/spring-context/5.1.8.RELEASE/spring-context-5.1.8.RELEASE-sources.jar!/org/springframework/context/annotation/AnnotationConfigApplicationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="84" column="11" selection-start-line="84" selection-start-column="11" selection-end-line="84" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/Employee2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#290#291#0" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
+            <element signature="e#380#381#0" expanded="true" />
+            <element signature="e#438#439#0" expanded="true" />
+            <element signature="e#468#469#0" expanded="true" />
+            <element signature="e#529#530#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="e#168#169#0" expanded="true" />
+            <element signature="e#195#196#0" expanded="true" />
+            <element signature="e#235#236#0" expanded="true" />
+            <element signature="e#267#268#0" expanded="true" />
+            <element signature="e#292#293#0" expanded="true" />
+            <element signature="e#330#331#0" expanded="true" />
+            <element signature="e#383#384#0" expanded="true" />
+            <element signature="e#419#420#0" expanded="true" />
+            <element signature="e#478#479#0" expanded="true" />
+            <element signature="e#514#515#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/Employee3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#468#469#0" expanded="true" />
+            <element signature="e#529#530#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/PersonFactoryBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <element signature="e#530#531#0" expanded="true" />
+            <element signature="e#557#558#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/mySoft/tools/maven/repo/org/springframework/spring-beans/5.1.8.RELEASE/spring-beans-5.1.8.RELEASE.jar!/org/springframework/beans/factory/config/BeanPostProcessor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/EmployeeBeanPostProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-annotation/src/main/java/com/example/testBean/MainBeanConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="114" column="46" selection-start-line="114" selection-start-column="46" selection-end-line="114" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1986#1987#0" expanded="true" />
+            <element signature="e#2032#2033#0" expanded="true" />
+            <element signature="e#3141#3142#0" expanded="true" />
+            <element signature="e#3178#3179#0" expanded="true" />
+            <element signature="e#3316#3317#0" expanded="true" />
+            <element signature="e#3354#3355#0" expanded="true" />
+            <element signature="e#3500#3501#0" expanded="true" />
+            <element signature="e#3538#3539#0" expanded="true" />
+            <element signature="e#3660#3661#0" expanded="true" />
+            <element signature="e#3698#3699#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
