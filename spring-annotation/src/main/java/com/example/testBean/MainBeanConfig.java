@@ -1,7 +1,9 @@
 package com.example.testBean;
 
-import org.springframework.context.annotation.*;
-import org.springframework.stereotype.Controller;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 
 /**
  * @author zhangjie
@@ -21,10 +23,11 @@ import org.springframework.stereotype.Controller;
  *      CUSTOM： 自定义的
  */
 @Configuration
-@ComponentScan(basePackages = {"com.example.testBean"},excludeFilters = {
+/*@ComponentScan(basePackages = {"com.example.testBean"},excludeFilters = {
         @ComponentScan.Filter(type = FilterType.ANNOTATION,value = {Controller.class}),
         @ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE,value = {PersonServiceImpl.class})
-})
+})*/
+@ComponentScan(basePackages = {"com.example.testBean"})
 /*@ComponentScan(basePackages = {"com.example.testBean"},includeFilters = {
         //@ComponentScan.Filter(type = FilterType.ANNOTATION,value = {Controller.class}),
         @ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE,value = {PersonServiceImpl.class}),
@@ -34,11 +37,14 @@ public class MainBeanConfig {
 
     public static void main(String[] args) {
         AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(MainBeanConfig.class);
-        System.out.println("配置加载完毕");
+        TestBeanConfig testBeanConfig = ctx.getBean(TestBeanConfig.class);
+        testBeanConfig.outputResource();
+
+        /*System.out.println("配置加载完毕");
         String[] definitionNames = ctx.getBeanDefinitionNames();
         for (String beanName : definitionNames){
             System.out.println(beanName);
-        }
+        }*/
        /* Object person1 = ctx.getBean("person2");
         Object person2 = ctx.getBean("person2");
         System.out.println(person1);
@@ -51,6 +57,7 @@ public class MainBeanConfig {
         System.out.println(person3);
         System.out.println(person1 == person2);
         System.out.println(person3 == person2);*/
+        ctx.close();
     }
 
     @Bean
