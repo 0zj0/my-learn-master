@@ -7,13 +7,14 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.core.env.Environment;
 import org.springframework.core.io.Resource;
+import org.springframework.stereotype.Component;
 
 /**
  * @author zhangjie
  * @date 2019/11/21 17:59
  */
-//@Component
-//@PropertySource("classpath*:test.properties")
+@Component
+//@PropertySource("classpath:test.properties")
 public class TestBeanConfig {
 
     /**
@@ -43,8 +44,8 @@ public class TestBeanConfig {
     /**
      * 注入文件资源
      */
-    @Value("classpath:test.properties")
-    private Resource testFile;
+    /*@Value("classpath:test.properties")
+    private Resource testFile;*/
 
     /**
      * 注入网址资源
@@ -55,8 +56,8 @@ public class TestBeanConfig {
     /**
      * 注入配置文件
      */
-    @Value("${book.name}")
-    private String bookName;
+    /*@Value("${book.name}")
+    private String bookName;*/
 
     @Autowired
     private Environment environment;
@@ -72,10 +73,10 @@ public class TestBeanConfig {
             System.out.println(osName);
             System.out.println(randomValue);
             //System.out.println(fromAnother);
-            System.out.println(IOUtils.toString(testFile.getInputStream()));
+            //System.out.println(IOUtils.toString(testFile.getInputStream()));
             System.out.println(IOUtils.toString(testUrl.getInputStream()));
-            System.out.println(bookName);
-            System.out.println(environment.getProperty("book.author"));
+            //System.out.println(bookName);
+            //System.out.println(environment.getProperty("book.author"));
         } catch (Exception e) {
             e.printStackTrace();
         }
