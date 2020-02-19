@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/commom-tool/base-mybatisplus-datasources/base-mybatisplus-datasources.iml" filepath="$PROJECT_DIR$/commom-tool/base-mybatisplus-datasources/base-mybatisplus-datasources.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commom-tool/base-mysql/base-mysql.iml" filepath="$PROJECT_DIR$/commom-tool/base-mysql/base-mysql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commom-tool/base-tool/base-tool.iml" filepath="$PROJECT_DIR$/commom-tool/base-tool/base-tool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business/business.iml" filepath="$PROJECT_DIR$/business/business.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commom-tool/commom-tool.iml" filepath="$PROJECT_DIR$/commom-tool/commom-tool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business/concurrent-demo/concurrent-demo.iml" filepath="$PROJECT_DIR$/business/concurrent-demo/concurrent-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business/design-demo/design-demo.iml" filepath="$PROJECT_DIR$/business/design-demo/design-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business/designMode.iml" filepath="$PROJECT_DIR$/business/designMode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-learn-master.iml" filepath="$PROJECT_DIR$/my-learn-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-annotation/spring-annotation.iml" filepath="$PROJECT_DIR$/spring-annotation/spring-annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business/springboot-demo/springboot-actuator-demo/springboot-actuator-demo.iml" filepath="$PROJECT_DIR$/business/springboot-demo/springboot-actuator-demo/springboot-actuator-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business/springboot-demo/springboot-demo.iml" filepath="$PROJECT_DIR$/business/springboot-demo/springboot-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business/springboot-demo/springboot-mybatisplus-demo/springboot-mybatisplus-demo.iml" filepath="$PROJECT_DIR$/business/springboot-demo/springboot-mybatisplus-demo/springboot-mybatisplus-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business/springboot-demo/springboot-test/springboot-test.iml" filepath="$PROJECT_DIR$/business/springboot-demo/springboot-test/springboot-test.iml" />
+    </modules>
+  </component>
+</project>
