@@ -549,19 +549,22 @@ public abstract class AbstractQueuedSynchronizer
     }
 
     /**
-     * Acquires in shared interruptible mode.
-     * @param arg the acquire argument
+     * 自旋获取共享锁资源
      */
     private void doAcquireSharedInterruptibly(int arg)
             throws InterruptedException {
+        //生成当前共享节点NODE
         final Node node = addWaiter(Node.SHARED);
         boolean failed = true;
         try {
             for (;;) {
+                //获取前驱节点
                 final Node p = node.predecessor();
                 if (p == head) {
+                    //再尝试获取共享锁资源
                     int r = tryAcquireShared(arg);
                     if (r >= 0) {
+                        //这一步设置node为head节点设置node.waitStatus->Node.PROPAGATE，然后唤醒node.thread
                         setHeadAndPropagate(node, r);
                         p.next = null; // help GC
                         failed = false;
@@ -764,6 +767,11 @@ public abstract class AbstractQueuedSynchronizer
      *        {@link #tryAcquire} but is otherwise uninterpreted and
      *        can represent anything you like.
      * @throws InterruptedException if the current thread is interrupted
+     */
+    /**
+     * 尝试中断获取锁，拿到独占锁
+     * @param arg
+     * @throws InterruptedException
      */
     public final void acquireInterruptibly(int arg)
             throws InterruptedException {
