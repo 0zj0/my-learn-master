@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/commom-tool/commom-tool.iml" filepath="$PROJECT_DIR$/commom-tool/commom-tool.iml" />
       <module fileurl="file://$PROJECT_DIR$/business/concurrent-demo/concurrent-demo.iml" filepath="$PROJECT_DIR$/business/concurrent-demo/concurrent-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/business/design-demo/design-demo.iml" filepath="$PROJECT_DIR$/business/design-demo/design-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business/jvm-demo/jvm-demo.iml" filepath="$PROJECT_DIR$/business/jvm-demo/jvm-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/my-learn-master.iml" filepath="$PROJECT_DIR$/my-learn-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-annotation/spring-annotation.iml" filepath="$PROJECT_DIR$/spring-annotation/spring-annotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/business/springboot-demo/springboot-actuator-demo/springboot-actuator-demo.iml" filepath="$PROJECT_DIR$/business/springboot-demo/springboot-actuator-demo/springboot-actuator-demo.iml" />

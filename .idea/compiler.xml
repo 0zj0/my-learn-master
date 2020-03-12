@@ -11,6 +11,7 @@
         <module name="base-tool" />
         <module name="concurrent-demo" />
         <module name="design-demo" />
+        <module name="jvm-demo" />
         <module name="springboot-actuator-demo" />
         <module name="springboot-demo" />
         <module name="springboot-mybatisplus-demo" />
@@ -27,6 +28,7 @@
       <module name="concurrent-demo" target="1.8" />
       <module name="design-demo" target="1.8" />
       <module name="designMode" target="1.8" />
+      <module name="jvm-demo" target="1.8" />
       <module name="my-learn-master" target="1.8" />
       <module name="spring-annotation" target="1.8" />
       <module name="springboot-actuator-demo" target="1.8" />
