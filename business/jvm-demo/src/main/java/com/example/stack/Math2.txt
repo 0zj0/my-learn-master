@@ -1,0 +1,128 @@
+javap -v Math.class > Math2.txt
+
+************************
+Classfile /D:/code/git/my-learn-master/business/jvm-demo/target/classes/com/example/stack/Math.class
+  Last modified 2020-3-12; size 672 bytes
+  MD5 checksum 4b4cc512862f4b159045d70687d5912d
+  Compiled from "Math.java"
+public class com.example.stack.Math
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+//常量池信息
+Constant pool:
+   #1 = Methodref          #6.#29         // java/lang/Object."<init>":()V
+   #2 = Class              #30            // com/example/stack/Math
+   #3 = Methodref          #2.#29         // com/example/stack/Math."<init>":()V
+   #4 = Methodref          #2.#31         // com/example/stack/Math.compute:()I
+   #5 = Fieldref           #2.#32         // com/example/stack/Math.initData:I
+   #6 = Class              #33            // java/lang/Object
+   #7 = Utf8               initData
+   #8 = Utf8               I
+   #9 = Utf8               <init>
+  #10 = Utf8               ()V
+  #11 = Utf8               Code
+  #12 = Utf8               LineNumberTable
+  #13 = Utf8               LocalVariableTable
+  #14 = Utf8               this
+  #15 = Utf8               Lcom/example/stack/Math;
+  #16 = Utf8               compute
+  #17 = Utf8               ()I
+  #18 = Utf8               a
+  #19 = Utf8               b
+  #20 = Utf8               c
+  #21 = Utf8               main
+  #22 = Utf8               ([Ljava/lang/String;)V
+  #23 = Utf8               args
+  #24 = Utf8               [Ljava/lang/String;
+  #25 = Utf8               math
+  #26 = Utf8               <clinit>
+  #27 = Utf8               SourceFile
+  #28 = Utf8               Math.java
+  #29 = NameAndType        #9:#10         // "<init>":()V
+  #30 = Utf8               com/example/stack/Math
+  #31 = NameAndType        #16:#17        // compute:()I
+  #32 = NameAndType        #7:#8          // initData:I
+  #33 = Utf8               java/lang/Object
+{
+  public static int initData;
+    descriptor: I
+    flags: ACC_PUBLIC, ACC_STATIC
+
+  public com.example.stack.Math();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 9: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lcom/example/stack/Math;
+
+  public int compute();
+    descriptor: ()I
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=4, args_size=1
+         0: iconst_1
+         1: istore_1
+         2: iconst_2
+         3: istore_2
+         4: iload_1
+         5: iload_2
+         6: iadd
+         7: bipush        10
+         9: imul
+        10: istore_3
+        11: iload_3
+        12: ireturn
+      LineNumberTable:
+        line 18: 0
+        line 19: 2
+        line 20: 4
+        line 21: 11
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      13     0  this   Lcom/example/stack/Math;
+            2      11     1     a   I
+            4       9     2     b   I
+           11       2     3     c   I
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=2, args_size=1
+         0: new           #2                  // class com/example/stack/Math
+         3: dup
+         4: invokespecial #3                  // Method "<init>":()V
+         7: astore_1
+         8: aload_1
+         9: invokevirtual #4                  // Method compute:()I
+        12: pop
+        13: return
+      LineNumberTable:
+        line 25: 0
+        line 26: 8
+        line 27: 13
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      14     0  args   [Ljava/lang/String;
+            8       6     1  math   Lcom/example/stack/Math;
+
+  static {};
+    descriptor: ()V
+    flags: ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: sipush        666
+         3: putstatic     #5                  // Field initData:I
+         6: return
+      LineNumberTable:
+        line 11: 0
+}
+SourceFile: "Math.java"

@@ -13,17 +13,29 @@ public class User {
 
     private int age;
 
-    static {
+    /*static {
         System.out.println("静态方法块...");
-    }
+    }*/
 
     public User(){
         System.out.println("构造方法...");
     }
 
+    public User(int age,String name){
+        this.age = age;
+        this.name = name;
+    }
+
+    @Override
+    protected void finalize() throws Throwable {
+        System.out.println("age:"+age+",finalize...");
+    }
+
     public static void hehe(){
         System.out.println("静态方法...");
     }
+
+
 
     public void print(){
         System.out.println("=======自己的加载器加载类调用方法=======");

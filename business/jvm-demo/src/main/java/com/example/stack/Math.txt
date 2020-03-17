@@ -1,0 +1,60 @@
+执行以下命令进行反汇编并输出
+javap -c Math.class > Math.txt
+
+*******************************************************
+Compiled from "Math.java"
+public class com.example.stack.Math {
+  public static int initData;
+
+  public com.example.stack.Math();
+    Code:
+       //从局部变量中装载引用类型值（refernce）
+       0: aload_0
+       //根据编译时类型来调用实例方法
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       //从方法中返回，返回值为void
+       4: return
+
+  public int compute();
+    Code:
+       0: iconst_1  //将int类型常量1压入操作数栈
+       1: istore_1  //将int类型值存入局部变量1 -- a =1
+       2: iconst_2  //将int类型常量2压入栈
+       3: istore_2  //将int类型值存入局部变量2 -- b = 2
+       4: iload_1   //从局部变量1中装载int类型值
+       5: iload_2   //从局部变量2中装载int类型值
+       6: iadd      //执行int类型的加法
+       7: bipush        10  //将一个8位带符号整数压入栈
+       9: imul      //执行int类型的乘法
+      10: istore_3  //将int类型值存入局部变量3
+      11: iload_3   //从局部变量3中装载int类型值
+      12: ireturn   //从方法中返回int类型的数据
+
+  public static void main(java.lang.String[]);
+    Code:
+       //创建类实例：new
+       0: new           #2                  // class com/example/stack/Math
+       //dup 复制栈顶部一个字长内容
+       3: dup
+       //根据编译时类型来调用实例方法
+       4: invokespecial #3                  // Method "<init>":()V
+       //将引用类型或returnAddress类型值存入局部变量1
+       7: astore_1
+       //从局部变量中装载引用类型值（refernce）
+       8: aload_1
+       //调度对象的实便方法：invokevirtual
+       9: invokevirtual #4                  // Method compute:()I
+       //pop 弹出栈顶端一个字长的内容
+      12: pop
+      //从方法中返回，返回值为void
+      13: return
+
+  static {};
+    Code:
+       //将16位带符号整数压入栈
+       0: sipush        666
+       //putstatic 设置类中静态字段的值
+       3: putstatic     #5                  // Field initData:I
+       //从方法中返回，返回值为void
+       6: return
+}
