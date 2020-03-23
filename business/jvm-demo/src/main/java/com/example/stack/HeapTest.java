@@ -10,6 +10,13 @@ public class HeapTest {
 
     byte[] a = new byte[1024*100];  //100KB
 
+    /**
+     * 1. 打印GC 日志：-XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+PrintGCDateStamps -Xloggc:D:/jvm/HeapTest_gc.log
+     *
+     *
+     * @param args
+     * @throws InterruptedException
+     */
     public static void main(String[] args) throws InterruptedException {
         ArrayList<HeapTest> heapTests = new ArrayList<>();
         while (true){
