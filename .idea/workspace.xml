@@ -1,29 +1,163 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f37b2b04-4ded-424e-9b77-eb34ff1af187" name="Default Changelist" comment="juc 提交- 线程池">
-      <change beforePath="" afterPath="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/Test.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/fork/arraysum/SumMultiThreads.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/fork/arraysum/SumRecursiveMT.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/fork/arraysum/SumTask.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/fork/recursiveaction/MergeSortAction.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/fork/recursiveaction/MergeSortMain.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/fork/recursivetask/LongSum.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/fork/recursivetask/LongSumMain.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/fork/test.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/schedule/SchedulePoolTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/util/SumUtils.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/util/Utils.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/business/jvm-demo/jvm-demo.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/business/jvm-demo/pom.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/business/jvm-demo/src/main/java/com/example/common/User.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/business/jvm-demo/src/main/java/com/example/jvm/MyClassLoaderTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/business/jvm-demo/src/main/java/com/example/jvm/TestJDKClassLoader.java" />
+    <list default="true" id="f37b2b04-4ded-424e-9b77-eb34ff1af187" name="Default Changelist" comment="juc 提交- schedule Thread pool">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_cloud_spring_cloud_alibaba_nacos_discovery_2_1_1_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_8.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_58.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_nacos_nacos_api_1_1_4.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_nacos_nacos_client_1_1_4.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_nacos_nacos_common_1_1_4.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_8.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_8.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_8.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_8.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_8.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_21_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_archaius_archaius_core_0_7_6.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_core_1_5_18.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_netflix_commons_netflix_commons_util_0_3_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_netflix_commons_netflix_statistics_0_1_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_2_3_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_core_2_3_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_httpclient_2_3_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_loadbalancer_2_3_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_transport_2_3_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_servo_servo_core_0_12_21.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_contribs_jersey_apache_client4_1_19_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_client_1_19_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_core_1_19_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_configuration_commons_configuration_1_8.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_2.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_prometheus_simpleclient_0_5_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxjava_1_3_8.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxnetty_0_4_9.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxnetty_contexts_0_4_9.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxnetty_servo_0_4_9.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_jsr311_api_1_1_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_46.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_7.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_16.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_16.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_16.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_14_Final.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_2_0_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_2_0_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_6.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_3_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_3_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_configuration_processor_2_1_3_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_3_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_1_3_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_1_3_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_3_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_1_3_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_1_3_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_context_2_1_1_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_context_2_1_3_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_archaius_2_1_3_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_ribbon_2_1_3_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_2_1_3_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_archaius_2_1_3_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_ribbon_2_1_3_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_1_4_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_5_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_5_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_5_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_5_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_5_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_5_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_5_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_5_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_1_5_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_5_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/business/springcloud-alibaba/common-dao/READ.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/business/springcloud-alibaba/common-dao/common-dao.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/business/springcloud-alibaba/common-dao/pom.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/business/springcloud-alibaba/common-dao/src/main/java/com/zj/config/DruidDataSourceProperties.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/business/springcloud-alibaba/common-dao/src/main/java/com/zj/config/SpringDruidConfig.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/business/springcloud-alibaba/common-dao/src/main/java/com/zj/dao/OrderInfoMapper.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/business/springcloud-alibaba/common-dao/src/main/java/com/zj/dao/PayInfoMapper.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/business/springcloud-alibaba/common-dao/src/main/java/com/zj/dao/ProductInfoMapper.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/business/springcloud-alibaba/common-dao/src/main/java/com/zj/entity/po/OrderInfo.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/business/springcloud-alibaba/common-dao/src/main/java/com/zj/entity/po/PayInfo.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/business/springcloud-alibaba/common-dao/src/main/java/com/zj/entity/po/ProductInfo.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/business/springcloud-alibaba/common-dao/src/main/resources/bootstrap.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/business/springcloud-alibaba/common-dao/src/main/resources/mybatis/MyBatis-config.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/business/springcloud-alibaba/common-dao/src/main/resources/mybatis/mapper/OrderInfoMapper.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/business/springcloud-alibaba/common-dao/src/main/resources/mybatis/mapper/PayInfoMapper.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/business/springcloud-alibaba/common-dao/src/main/resources/mybatis/mapper/ProductInfoMapper.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/business/springcloud-alibaba/nacos-client-order/nacos-client-order.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/business/springcloud-alibaba/nacos-client-order/pom.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/business/springcloud-alibaba/nacos-client-order/src/main/java/com/zj/nacosclientorder/NacosClientOrderApplication.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/business/springcloud-alibaba/nacos-client-order/src/main/resources/application.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/business/springcloud-alibaba/pom.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/business/springcloud-alibaba/springcloud-alibaba.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/com.intellij.rt.execution.application.AppMainV2$1.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/com.sun.jmx.remote.internal.ServerCommunicatorAdmin$Timeout.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java.io.Console$1.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java.io.DeleteOnExitHook$1.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java.lang.ApplicationShutdownHooks$1.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java.lang.ref.Finalizer$FinalizerThread.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java.lang.ref.Reference$ReferenceHandler.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java.nio.DirectByteBuffer$Deallocator.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java.util.concurrent.ThreadPoolExecutor$Worker.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java.util.logging.LogManager$Cleaner.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/my-learn-master.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessorMonitor.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/org.apache.catalina.core.StandardServer$1.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/org.apache.catalina.core.StandardServer$2.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/org.apache.coyote.AbstractProtocol$1.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/org.apache.coyote.AbstractProtocol$2.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/org.apache.tomcat.util.net.NioBlockingSelector$BlockPoller$RunnableRemove.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/org.apache.tomcat.util.net.NioBlockingSelector$BlockPoller.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/org.apache.tomcat.util.net.NioEndpoint$Poller.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/org.apache.tomcat.util.net.NioEndpoint$PollerEvent.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/org.springframework.boot.autoconfigure.BackgroundPreinitializer$1.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/org.springframework.boot.autoconfigure.BackgroundPreinitializer$CharsetInitializer.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/org.springframework.boot.autoconfigure.BackgroundPreinitializer$ConversionServiceInitializer.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/org.springframework.boot.autoconfigure.BackgroundPreinitializer$JacksonInitializer.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/org.springframework.boot.autoconfigure.BackgroundPreinitializer$MBeanFactoryInitializer.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/org.springframework.boot.autoconfigure.BackgroundPreinitializer$MessageConverterInitializer.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/org.springframework.boot.autoconfigure.BackgroundPreinitializer$ValidationInitializer.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/org.springframework.boot.web.embedded.tomcat.TomcatWebServer$1.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/org.springframework.context.support.AbstractApplicationContext$1.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sun.nio.ch.FileChannelImpl$Unmapper.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sun.nio.ch.PipeImpl$Initializer$LoopbackConnector.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sun.nio.fs.NativeBuffer$Deallocator.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sun.rmi.transport.DGCAckHandler$1.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sun.rmi.transport.DGCImpl$1.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.class" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_64.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_60.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_64.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_60.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_commons_2_2_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_commons_2_1_1_RELEASE.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_context_2_2_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_commons_2_1_3_RELEASE.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_2_2_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_2_1_1_RELEASE.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_rsa_1_0_9_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_rsa_1_0_7_RELEASE.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/business/pom.xml" afterPath="$PROJECT_DIR$/business/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/commom-tool/base-mybatisplus-datasources/base-mybatisplus-datasources.iml" afterPath="$PROJECT_DIR$/commom-tool/base-mybatisplus-datasources/base-mybatisplus-datasources.iml" />
+      <change beforePath="$PROJECT_DIR$/commom-tool/base-mysql/base-mysql.iml" afterPath="$PROJECT_DIR$/commom-tool/base-mysql/base-mysql.iml" />
+      <change beforePath="$PROJECT_DIR$/commom-tool/base-tool/base-tool.iml" afterPath="$PROJECT_DIR$/commom-tool/base-tool/base-tool.iml" />
+      <change beforePath="$PROJECT_DIR$/commom-tool/commom-tool.iml" afterPath="$PROJECT_DIR$/commom-tool/commom-tool.iml" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,6 +174,11 @@
     <ignored path="$PROJECT_DIR$/business/design-demo/target/" />
     <ignored path="$PROJECT_DIR$/business/concurrent-demo/target/" />
     <ignored path="$PROJECT_DIR$/business/jvm-demo/target/" />
+    <ignored path="$PROJECT_DIR$/business/jvm-full-gc/target/" />
+    <ignored path="$PROJECT_DIR$/business/springcloud-alibaba/target/" />
+    <ignored path="$PROJECT_DIR$/business/springcloud-alibaba/nacos-order-center/target/" />
+    <ignored path="$PROJECT_DIR$/business/springcloud-alibaba/nacos-client-order/target/" />
+    <ignored path="$PROJECT_DIR$/business/springcloud-alibaba/common-dao/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -132,45 +271,57 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MyClassLoaderTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/business/jvm-demo/src/main/java/com/example/jvm/MyClassLoaderTest.java">
+      <file leaf-file-name="DruidDataSourceProperties.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/business/springcloud-alibaba/common-dao/src/main/java/com/zj/config/DruidDataSourceProperties.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="29" column="33" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="33" />
+            <state relative-caret-position="411">
+              <caret line="20" column="32" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NacosClientOrderApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/business/springcloud-alibaba/nacos-client-order/src/main/java/com/zj/nacosclientorder/NacosClientOrderApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#357#358#0" expanded="true" />
-                <element signature="e#407#408#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/business/jvm-demo/src/main/java/com/example/common/User.java">
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/business/springcloud-alibaba/nacos-client-order/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="24" column="14" lean-forward="false" selection-start-line="23" selection-start-column="29" selection-end-line="24" selection-end-column="14" />
-              <folding>
-                <element signature="e#249#250#0" expanded="true" />
-                <element signature="e#294#295#0" expanded="true" />
-                <element signature="e#326#327#0" expanded="true" />
-                <element signature="e#371#372#0" expanded="true" />
-                <element signature="e#397#398#0" expanded="true" />
-                <element signature="e#462#463#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="189">
+              <caret line="7" column="55" lean-forward="true" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestJDKClassLoader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/business/jvm-demo/src/main/java/com/example/jvm/TestJDKClassLoader.java">
+      <file leaf-file-name="READ.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/business/springcloud-alibaba/common-dao/READ.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="135">
+                <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/business/springcloud-alibaba/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="16" column="86" lean-forward="false" selection-start-line="16" selection-start-column="86" selection-end-line="16" selection-end-column="86" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="1026">
+              <caret line="38" column="21" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="38" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -181,9 +332,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="JUnit4 Test Class" />
         <option value="Interface" />
         <option value="Kotlin File" />
+        <option value="JUnit4 Test Class" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -210,6 +362,7 @@
       <find>checkInterruptWhileWaiting</find>
       <find>ScheduledFutureTask</find>
       <find>reExecutePeriodic</find>
+      <find>spring-cloud-context</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -223,37 +376,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/atomic/AtomicStampedReferenceTest.java" />
-        <option value="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/atomic/AtomicArrayIntegerTest.java" />
-        <option value="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/atomic/AtomicIntegerArrayTest.java" />
-        <option value="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/atomic/AtomicIntegerFiledUpdateTest.java" />
-        <option value="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/atomic/AtomicIntegerFiledUpdaterTest.java" />
-        <option value="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/atomic/AtomicIntegerAgeUpdaterCustom.java" />
-        <option value="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/unsafe/MonitorTest.java" />
-        <option value="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/unsafe/FenceTest.java" />
-        <option value="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/unsafe/DirectMemoryAccessTest.java" />
-        <option value="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/tools/ExecutorsTest.java" />
-        <option value="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/queue/Ball.java" />
-        <option value="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/queue/ArrayBlockingQueueTest.java" />
-        <option value="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/aqs/resource/AbstractQueuedSynchronizer.java" />
-        <option value="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/queue/DelayedQueueTest.java" />
-        <option value="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/queue/MovieTiket.java" />
-        <option value="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/pool/ThreadTest.java" />
-        <option value="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/pool/RunTask.java" />
-        <option value="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/pool/ExecutorSample.java" />
-        <option value="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/pool/test.java" />
-        <option value="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/pool2/exception/PolicyException.java" />
-        <option value="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/pool2/policy/PolicyHandler.java" />
-        <option value="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/pool2/policy/DefaultPolicyHandler.java" />
-        <option value="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/pool2/TulingThreadPoolExecutor.java" />
-        <option value="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/pool3/executor/MyExecutorService.java" />
-        <option value="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/pool3/policy/MyDefautPolicyHandler.java" />
-        <option value="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/pool3/exception/MyPolicyException.java" />
-        <option value="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/pool3/policy/MyDefaultPolicyHandler.java" />
-        <option value="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/pool3/policy/MyPolicyHandler.java" />
-        <option value="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/pool3/Task.java" />
-        <option value="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/pool2/Test.java" />
-        <option value="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/pool3/test.java" />
         <option value="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/pool3/executor/MyThreadPoolExecutor.java" />
         <option value="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/pool2/Task.java" />
         <option value="$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/util/Utils.java" />
@@ -271,9 +393,40 @@
         <option value="$PROJECT_DIR$/business/jvm-demo/src/main/java/com/example/Test.java" />
         <option value="$PROJECT_DIR$/business/jvm-demo/src/main/java/com/example/TestJDKClassLoader.java" />
         <option value="$PROJECT_DIR$/business/jvm-demo/src/main/java/com/example/jvm/TestJDKClassLoader.java" />
-        <option value="$PROJECT_DIR$/business/jvm-demo/src/main/java/com/example/common/User.java" />
         <option value="$PROJECT_DIR$/business/jvm-demo/src/main/java/com/example/common/User1.java" />
         <option value="$PROJECT_DIR$/business/jvm-demo/src/main/java/com/example/jvm/MyClassLoaderTest.java" />
+        <option value="$PROJECT_DIR$/business/jvm-demo/src/main/java/com/example/stack/Math.txt" />
+        <option value="$PROJECT_DIR$/business/jvm-demo/src/main/java/com/example/stack/StackOverflowTest.java" />
+        <option value="$PROJECT_DIR$/business/jvm-demo/src/main/java/com/example/stack/Math.java" />
+        <option value="$PROJECT_DIR$/business/jvm-demo/src/main/java/com/example/stack/Math2.txt" />
+        <option value="$PROJECT_DIR$/business/jvm-demo/src/main/java/com/example/gc/GCTest.java" />
+        <option value="$PROJECT_DIR$/business/jvm-demo/src/main/java/com/example/common/User.java" />
+        <option value="$PROJECT_DIR$/business/jvm-demo/src/main/java/com/example/stack/OOMTest.java" />
+        <option value="$PROJECT_DIR$/business/jvm-full-gc/src/main/java/com/example/demo/User.java" />
+        <option value="$PROJECT_DIR$/business/jvm-full-gc/src/main/java/com/example/demo/Application.java" />
+        <option value="$PROJECT_DIR$/business/jvm-full-gc/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/business/jvm-full-gc/src/test/java/com/example/demo/ApplicationTest.java" />
+        <option value="$PROJECT_DIR$/business/jvm-full-gc/src/main/java/com/example/demo/IndexController.java" />
+        <option value="$PROJECT_DIR$/business/jvm-demo/src/main/java/com/example/stack/HeapTest.java" />
+        <option value="$PROJECT_DIR$/business/pom.xml" />
+        <option value="$PROJECT_DIR$/business/springcloud-alibaba/nacos-client-order/src/test/java/com/zj/nacosclientorder/NacosClientOrderApplicationTests.java" />
+        <option value="$PROJECT_DIR$/business/springcloud-alibaba/common-dao/src/main/java/com/zj/entity/po/OrderInfo.java" />
+        <option value="$PROJECT_DIR$/business/springcloud-alibaba/common-dao/src/main/java/com/zj/dao/PayInfoMapper.java" />
+        <option value="$PROJECT_DIR$/business/springcloud-alibaba/common-dao/src/main/java/com/zj/dao/ProductInfoMapper.java" />
+        <option value="$PROJECT_DIR$/business/springcloud-alibaba/common-dao/src/main/resources/mybatis/mapper/PayInfoMapper.xml" />
+        <option value="$PROJECT_DIR$/business/springcloud-alibaba/common-dao/src/main/resources/mybatis/mapper/ProductInfoMapper.xml" />
+        <option value="$PROJECT_DIR$/business/springcloud-alibaba/common-dao/src/main/java/com/zj/config/DruidDataSourceProperties.java" />
+        <option value="$PROJECT_DIR$/business/springcloud-alibaba/common-dao/src/main/java/com/zj/dao/OrderInfoMapper.java" />
+        <option value="$PROJECT_DIR$/business/springcloud-alibaba/common-dao/src/main/resources/mybatis/mapper/OrderInfoMapper.xml" />
+        <option value="$PROJECT_DIR$/business/springcloud-alibaba/common-dao/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/business/springcloud-alibaba/nacos-client-order/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/business/springcloud-alibaba/common-dao/pom.xml" />
+        <option value="$PROJECT_DIR$/business/springcloud-alibaba/nacos-client-order/pom.xml" />
+        <option value="$PROJECT_DIR$/business/springcloud-alibaba/pom.xml" />
+        <option value="$PROJECT_DIR$/business/springcloud-alibaba/common-dao/src/main/java/com/zj/config/SpringDruidConfig.java" />
+        <option value="$PROJECT_DIR$/business/springcloud-alibaba/nacos-client-order/src/main/java/com/zj/nacosclientorder/NacosClientOrderApplication.java" />
+        <option value="$PROJECT_DIR$/business/springcloud-alibaba/common-dao/READ.md" />
       </list>
     </option>
   </component>
@@ -301,6 +454,15 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="base-mybatisplus-datasources" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="base-mybatisplus-datasources" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="my-learn-master" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
@@ -313,9 +475,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-44" />
-    <option name="y" value="379" />
-    <option name="width" value="1920" />
+    <option name="x" value="-576" />
+    <option name="y" value="169" />
+    <option name="width" value="1188" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -410,10 +572,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -430,20 +589,50 @@
               <item name="my-learn-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-learn-master" type="462c0819:PsiDirectoryNode" />
               <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrent-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-demo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="my-learn-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-learn-master" type="462c0819:PsiDirectoryNode" />
               <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrent-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="springcloud-alibaba" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-learn-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-learn-master" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="springcloud-alibaba" type="462c0819:PsiDirectoryNode" />
+              <item name="common-dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-learn-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-learn-master" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="springcloud-alibaba" type="462c0819:PsiDirectoryNode" />
+              <item name="common-dao" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="my-learn-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-learn-master" type="462c0819:PsiDirectoryNode" />
               <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrent-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="springcloud-alibaba" type="462c0819:PsiDirectoryNode" />
+              <item name="nacos-client-order" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-learn-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-learn-master" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="springcloud-alibaba" type="462c0819:PsiDirectoryNode" />
+              <item name="nacos-client-order" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-learn-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-learn-master" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="springcloud-alibaba" type="462c0819:PsiDirectoryNode" />
+              <item name="nacos-client-order" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -451,7 +640,8 @@
               <item name="my-learn-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-learn-master" type="462c0819:PsiDirectoryNode" />
               <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrent-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="springcloud-alibaba" type="462c0819:PsiDirectoryNode" />
+              <item name="nacos-client-order" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -460,16 +650,75 @@
               <item name="my-learn-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-learn-master" type="462c0819:PsiDirectoryNode" />
               <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrent-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="springcloud-alibaba" type="462c0819:PsiDirectoryNode" />
+              <item name="nacos-client-order" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="nacosclientorder" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-learn-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-learn-master" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="springcloud-alibaba" type="462c0819:PsiDirectoryNode" />
+              <item name="nacos-client-order" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-learn-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-learn-master" type="462c0819:PsiDirectoryNode" />
+              <item name="commom-tool" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-learn-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-learn-master" type="462c0819:PsiDirectoryNode" />
+              <item name="commom-tool" type="462c0819:PsiDirectoryNode" />
+              <item name="base-mybatisplus-datasources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-learn-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-learn-master" type="462c0819:PsiDirectoryNode" />
+              <item name="commom-tool" type="462c0819:PsiDirectoryNode" />
+              <item name="base-mybatisplus-datasources" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-learn-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-learn-master" type="462c0819:PsiDirectoryNode" />
+              <item name="commom-tool" type="462c0819:PsiDirectoryNode" />
+              <item name="base-mybatisplus-datasources" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-learn-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-learn-master" type="462c0819:PsiDirectoryNode" />
+              <item name="commom-tool" type="462c0819:PsiDirectoryNode" />
+              <item name="base-mybatisplus-datasources" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-learn-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-learn-master" type="462c0819:PsiDirectoryNode" />
+              <item name="commom-tool" type="462c0819:PsiDirectoryNode" />
+              <item name="base-mybatisplus-datasources" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -482,40 +731,45 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574414797486" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/business/springboot-demo/springboot-mybatisplus-demo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../tuling/tuling-3-springcloud-alibaba-sima/tuling3-springcloud-alibaba" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.customizations" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.example.demo" />
       <recent name="com.example.genenator" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\MyGit\my-learn-master\spring-annotation\src\main\resources" />
-      <recent name="F:\MyGit\my-learn-master\spring-annotation\src\main\resources\config" />
-      <recent name="F:\MyGit\my-learn-master\commom-tool\base-mybatisplus-datasources\src\main\resources\config" />
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.zj.config" />
+      <recent name="com.example.demo" />
+      <recent name="com.example.common" />
+      <recent name="com.example.queue" />
+      <recent name="com.example.tools" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\code\git\my-learn-master\business\springcloud-alibaba\common-dao\src\main\java\com\zj\dao" />
+      <recent name="D:\code\git\my-learn-master\business\springcloud-alibaba\common-dao\src\main\java\com\zj\entity\po" />
+      <recent name="D:\code\git\my-learn-master\business\springcloud-alibaba\common-dao\src\main\resources\mybatis\mapper" />
+      <recent name="D:\code\git\my-learn-master\business\springcloud-alibaba\common-dao\src\main\resources\mybatis" />
+      <recent name="D:\code\git\my-learn-master\business\jvm-full-gc\src\main\resources" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.example.common" />
-      <recent name="com.example.queue" />
-      <recent name="com.example.tools" />
-      <recent name="com.example.unsafe" />
-      <recent name="com.example.tools.countdownlaunch" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\code\git\my-learn-master\business\concurrent-demo\src\main\java\com\example\fork\recursivetask" />
-      <recent name="D:\code\git\my-learn-master\business\concurrent-demo\src\main\java\com\example\fork\recursiveaction" />
-      <recent name="D:\code\git\my-learn-master\business\concurrent-demo\src\main\java\com\example\util" />
-      <recent name="D:\code\git\my-learn-master\business\concurrent-demo\src\main\java\com\example\pool2" />
-      <recent name="D:\code\git\my-learn-master\business\concurrent-demo\src\main\java\com\example" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\code\git\my-learn-master\business\springcloud-alibaba\common-dao\src\main\resources" />
+      <recent name="D:\code\git\my-learn-master\business\springcloud-alibaba\common-dao\src\main\resources\config" />
+      <recent name="F:\MyGit\my-learn-master\spring-annotation\src\main\resources" />
+      <recent name="F:\MyGit\my-learn-master\spring-annotation\src\main\resources\config" />
+      <recent name="F:\MyGit\my-learn-master\commom-tool\base-mybatisplus-datasources\src\main\resources\config" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -530,7 +784,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MyClassLoaderTest">
+  <component name="RunManager" selected="Spring Boot.NacosClientOrderApplication">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="WIDTH" value="0" />
@@ -540,15 +794,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DeadThreadTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.example.thread.*" />
+          <option name="PATTERN" value="com.example.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.example.thread.DeadThreadTest" />
-      <option name="VM_PARAMETERS" value="-XX:+UnlockDiagnosticVMOptions -XX:+PrintAssembly -Xcomp" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.Application" />
+      <option name="VM_PARAMETERS" value="-Xms1536M -Xmx1536M -Xmn1024M -Xss256K -XX:SurvivorRatio=6 -XX:MetaspaceSize=256M -XX:MaxMetaspaceSize=256M -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=92 -XX:+UseCMSInitiatingOccupancyOnly" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -556,36 +810,17 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
+      <module name="jvm-full-gc" />
       <envs />
     </configuration>
-    <configuration name="LockTemplete" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="DemoApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.example.aqs.template.*" />
+          <option name="PATTERN" value="com.example.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.example.aqs.template.LockTemplete" />
-      <option name="VM_PARAMETERS" value="-XX:+UnlockDiagnosticVMOptions -XX:+PrintAssembly -Xcomp" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="concurrent-demo" />
-      <envs />
-    </configuration>
-    <configuration name="MyClassLoaderTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.example.jvm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.example.jvm.MyClassLoaderTest" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.DemoApplication" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -594,39 +829,39 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="jvm-demo" />
+      <module name="springboot-actuator-demo" />
       <envs />
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="DemoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.example.jvm.*" />
+          <option name="PATTERN" value="com.example.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.example.Test" />
-      <option name="VM_PARAMETERS" value="-XX:+UnlockDiagnosticVMOptions -XX:+PrintAssembly -Xcomp" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.DemoApplication" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="concurrent-demo" />
+      <module name="springboot-test" />
       <envs />
     </configuration>
-    <configuration name="TestJDKClassLoader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="HeapTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.example.jvm.*" />
+          <option name="PATTERN" value="com.example.stack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.example.jvm.TestJDKClassLoader" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="MAIN_CLASS_NAME" value="com.example.stack.HeapTest" />
+      <option name="VM_PARAMETERS" value="-XX:+PrintGCDetails  -XX:+PrintGCTimeStamps  -XX:+PrintGCDateStamps  -Xloggc:D:/jvm/HeapTest_gc.log" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
@@ -651,6 +886,31 @@
       <method>
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="ApplicationTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="jvm-full-gc" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.example.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.ApplicationTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -679,6 +939,12 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
       <module name="springboot-test-demo" />
+      <envs />
+    </configuration>
+    <configuration name="NacosClientOrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zj.nacosclientorder.NacosClientOrderApplication" />
+      <module name="nacos-client-order" />
       <envs />
     </configuration>
     <configuration name="SpringbootMybatisplusDemoApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -732,23 +998,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list size="8">
+    <list size="9">
       <item index="0" class="java.lang.String" itemvalue="Spring Boot.DemoApplication" />
       <item index="1" class="java.lang.String" itemvalue="Spring Boot.SpringbootMybatisplusDemoApplication" />
       <item index="2" class="java.lang.String" itemvalue="Spring Boot.SpringbootMybatisplusDemoApplication (1)" />
-      <item index="3" class="java.lang.String" itemvalue="Application.DeadThreadTest" />
-      <item index="4" class="java.lang.String" itemvalue="Application.LockTemplete" />
-      <item index="5" class="java.lang.String" itemvalue="Application.Test" />
-      <item index="6" class="java.lang.String" itemvalue="Application.TestJDKClassLoader" />
-      <item index="7" class="java.lang.String" itemvalue="Application.MyClassLoaderTest" />
+      <item index="3" class="java.lang.String" itemvalue="Spring Boot.NacosClientOrderApplication" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Application" />
+      <item index="5" class="java.lang.String" itemvalue="Application.DemoApplication" />
+      <item index="6" class="java.lang.String" itemvalue="Application.DemoApplication (1)" />
+      <item index="7" class="java.lang.String" itemvalue="Application.HeapTest" />
+      <item index="8" class="java.lang.String" itemvalue="JUnit.ApplicationTest.test" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.MyClassLoaderTest" />
-        <item index="1" class="java.lang.String" itemvalue="Application.TestJDKClassLoader" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Test" />
-        <item index="3" class="java.lang.String" itemvalue="Application.LockTemplete" />
-        <item index="4" class="java.lang.String" itemvalue="Application.DeadThreadTest" />
+        <item index="0" class="java.lang.String" itemvalue="Application.HeapTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ApplicationTest.test" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Application" />
+        <item index="3" class="java.lang.String" itemvalue="Application.DemoApplication" />
+        <item index="4" class="java.lang.String" itemvalue="Application.DemoApplication (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -815,7 +1082,24 @@
       <workItem from="1583722068294" duration="904000" />
       <workItem from="1583806915301" duration="15101000" />
       <workItem from="1583892201819" duration="6771000" />
-      <workItem from="1583996376854" duration="17000" />
+      <workItem from="1583996376854" duration="7956000" />
+      <workItem from="1584064859419" duration="5637000" />
+      <workItem from="1584239718028" duration="1274000" />
+      <workItem from="1584339692823" duration="1851000" />
+      <workItem from="1584421172919" duration="4013000" />
+      <workItem from="1584445444158" duration="2625000" />
+      <workItem from="1584497488950" duration="5630000" />
+      <workItem from="1584519345333" duration="2026000" />
+      <workItem from="1584679874014" duration="770000" />
+      <workItem from="1584780062727" duration="594000" />
+      <workItem from="1584969423365" duration="1495000" />
+      <workItem from="1585220069807" duration="307000" />
+      <workItem from="1585291076173" duration="1830000" />
+      <workItem from="1585365186574" duration="594000" />
+      <workItem from="1585970622137" duration="593000" />
+      <workItem from="1586062750029" duration="7570000" />
+      <workItem from="1586081786785" duration="852000" />
+      <workItem from="1586486951090" duration="160000" />
     </task>
     <task id="LOCAL-00001" summary="工具类 添加">
       <created>1565336687867</created>
@@ -887,15 +1171,42 @@
       <option name="project" value="LOCAL" />
       <updated>1583652855129</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="juc 提交- schedule Thread pool">
+      <created>1583996424203</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1583996424203</updated>
+    </task>
+    <task id="LOCAL-00012" summary="jvm 提交">
+      <created>1584445509194</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1584445509195</updated>
+    </task>
+    <task id="LOCAL-00013" summary="jvm 提交">
+      <created>1584970901143</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1584970901143</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LotteryTest_test - 2019.08.19 at 14h 39m 09s.xml">
-      <configuration name="LotteryTest.test" configurationId="JUnit" />
+    <history-entry file="ApplicationTest_test - 2020.03.18 at 16h 33m 17s.xml">
+      <configuration name="ApplicationTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LotteryTest_test - 2019.08.19 at 14h 45m 52s.xml">
-      <configuration name="LotteryTest.test" configurationId="JUnit" />
+    <history-entry file="ApplicationTest_test - 2020.03.18 at 16h 47m 42s.xml">
+      <configuration name="ApplicationTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DemoApplicationTests_contextLoads - 2019.09.05 at 18h 33m 24s.xml">
+      <configuration name="DemoApplicationTests.contextLoads" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IOCTest_test001 - 2019.09.07 at 14h 12m 04s.xml">
+      <configuration name="IOCTest.test001" configurationId="JUnit" />
     </history-entry>
     <history-entry file="LotteryTest_test - 2019.08.19 at 14h 55m 04s.xml">
       <configuration name="LotteryTest.test" configurationId="JUnit" />
@@ -915,15 +1226,9 @@
     <history-entry file="LotteryTest_test - 2019.08.20 at 09h 24m 59s.xml">
       <configuration name="LotteryTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DemoApplicationTests_contextLoads - 2019.09.05 at 18h 33m 24s.xml">
-      <configuration name="DemoApplicationTests.contextLoads" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="IOCTest_test001 - 2019.09.07 at 14h 12m 04s.xml">
-      <configuration name="IOCTest.test001" configurationId="JUnit" />
-    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="243215000" />
+    <option name="totallyTimeSpent" value="288975000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -949,15 +1254,16 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997833" sideWeight="0.4978678" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.4978678" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2881907" sideWeight="0.4946695" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37919825" sideWeight="0.4946695" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28198293" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18634886" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20895523" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -966,7 +1272,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.4978678" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1024,7 +1329,9 @@
     <MESSAGE value="juc 提交- aqs" />
     <MESSAGE value="juc 提交-" />
     <MESSAGE value="juc 提交- 线程池" />
-    <option name="LAST_COMMIT_MESSAGE" value="juc 提交- 线程池" />
+    <MESSAGE value="juc 提交- schedule Thread pool" />
+    <MESSAGE value="jvm 提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="jvm 提交" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1066,7 +1373,7 @@
           <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="32" />
+      <option name="time" value="33" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -1079,381 +1386,168 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/pool2/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+    <entry file="file://$PROJECT_DIR$/commom-tool/base-mybatisplus-datasources/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/pool2/Task.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/pool/ExecutorSample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="16" column="67" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/util/concurrent/ExecutorService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="235" column="18" lean-forward="false" selection-start-line="235" selection-start-column="18" selection-end-line="235" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/fork/arraysum/SumTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="34" column="35" lean-forward="false" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/util/SumUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/util/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="17" column="9" lean-forward="false" selection-start-line="15" selection-start-column="39" selection-end-line="17" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/fork/arraysum/SumMultiThreads.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="47" column="57" lean-forward="false" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/fork/arraysum/SumRecursiveMT.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="39" column="37" lean-forward="true" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/java.util.concurrent.ForkJoinPool">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>java.util.concurrent.ForkJoinPool</OriginalElement>
-          <nodes>
-            <node x="" y="">java.util.concurrent.AbstractExecutorService</node>
-            <node x="" y="">java.util.concurrent.Executor</node>
-            <node x="" y="">java.util.concurrent.ForkJoinPool</node>
-            <node x="" y="">sun.misc.Contended</node>
-            <node x="" y="">java.util.concurrent.ExecutorService</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="162.0" y="137.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/java.util.concurrent.ForkJoinTask">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>java.util.concurrent.ForkJoinTask</OriginalElement>
-          <nodes>
-            <node x="136.0" y="0.0">java.util.concurrent.Future</node>
-            <node x="0.0" y="0.0">java.io.Serializable</node>
-            <node x="55.5" y="81.0">java.util.concurrent.ForkJoinTask</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="java.util.concurrent.ForkJoinTask" target="java.util.concurrent.Future">
-              <point x="31.5" y="-15.5" />
-              <point x="150.0" y="56.0" />
-              <point x="179.0" y="56.0" />
-              <point x="0.0" y="15.5" />
-            </edge>
-            <edge source="java.util.concurrent.ForkJoinTask" target="java.io.Serializable">
-              <point x="-31.5" y="-15.5" />
-              <point x="87.0" y="56.0" />
-              <point x="58.0" y="56.0" />
-              <point x="0.0" y="15.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="-323.0" y="-4.0" />
-          <SelectedNodes>
-            <node>java.util.concurrent.ForkJoinTask</node>
-          </SelectedNodes>
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/pool3/executor/MyThreadPoolExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="58" column="25" lean-forward="false" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/fork/recursiveaction/MergeSortAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-447">
-          <caret line="12" column="11" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/lang/Runtime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="634" column="41" lean-forward="false" selection-start-line="634" selection-start-column="22" selection-end-line="634" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/fork/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/fork/recursiveaction/MergeSortMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="99" column="27" lean-forward="false" selection-start-line="99" selection-start-column="21" selection-end-line="99" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/fork/recursivetask/LongSum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="50" column="24" lean-forward="false" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/fork/recursivetask/LongSumMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="26" column="40" lean-forward="false" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/util/concurrent/ForkJoinPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="2530" column="7" lean-forward="false" selection-start-line="2530" selection-start-column="7" selection-end-line="2530" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/util/concurrent/ForkJoinTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="695" column="7" lean-forward="true" selection-start-line="695" selection-start-column="7" selection-end-line="695" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/java.util.concurrent.ScheduledThreadPoolExecutor">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>java.util.concurrent.ScheduledThreadPoolExecutor</OriginalElement>
-          <nodes>
-            <node x="" y="">java.util.concurrent.AbstractExecutorService</node>
-            <node x="" y="">java.util.concurrent.ThreadPoolExecutor</node>
-            <node x="" y="">java.util.concurrent.Executor</node>
-            <node x="" y="">java.util.concurrent.ScheduledExecutorService</node>
-            <node x="" y="">java.util.concurrent.ScheduledThreadPoolExecutor</node>
-            <node x="" y="">java.util.concurrent.ExecutorService</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="205.0" y="178.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/util/PriorityQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="108" column="40" lean-forward="false" selection-start-line="108" selection-start-column="40" selection-end-line="108" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/util/concurrent/ScheduledFuture.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="43" column="19" lean-forward="true" selection-start-line="42" selection-start-column="13" selection-end-line="43" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/jre/lib/rt.jar!/java/util/concurrent/ScheduledThreadPoolExecutor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="853" column="0" lean-forward="true" selection-start-line="843" selection-start-column="8" selection-end-line="853" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.8.RELEASE/spring-context-5.1.8.RELEASE-sources.jar!/org/springframework/scheduling/concurrent/ScheduledExecutorFactoryBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="108" column="51" lean-forward="false" selection-start-line="108" selection-start-column="51" selection-end-line="108" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.8.RELEASE/spring-context-5.1.8.RELEASE-sources.jar!/org/springframework/scheduling/concurrent/ConcurrentTaskScheduler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4617">
-          <caret line="203" column="51" lean-forward="false" selection-start-line="203" selection-start-column="51" selection-end-line="203" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/schedule/SchedulePoolTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="26" column="26" lean-forward="false" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/util/concurrent/BlockingQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4428">
-          <caret line="198" column="0" lean-forward="false" selection-start-line="198" selection-start-column="0" selection-end-line="198" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/util/concurrent/DelayQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2916">
-          <caret line="148" column="5" lean-forward="false" selection-start-line="135" selection-start-column="30" selection-end-line="148" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="1202" column="61" lean-forward="false" selection-start-line="1202" selection-start-column="47" selection-end-line="1202" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/util/concurrent/Executors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6561">
-          <caret line="284" column="31" lean-forward="false" selection-start-line="284" selection-start-column="31" selection-end-line="284" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/util/concurrent/ScheduledExecutorService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3267">
-          <caret line="154" column="34" lean-forward="false" selection-start-line="154" selection-start-column="34" selection-end-line="154" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/concurrent-demo/target/classes/com/example/thread/DeadThreadTest.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-373">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/util/concurrent/ScheduledThreadPoolExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="848" column="68" lean-forward="true" selection-start-line="848" selection-start-column="68" selection-end-line="848" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/concurrent-demo/target/classes/com/example/queue/ArrayBlockingQueueTest.class">
+    <entry file="file://$PROJECT_DIR$/business/springboot-demo/springboot-mybatisplus-demo/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/concurrent-demo/target/classes/com/example/jmm/VolatileReOrderSample.class">
+    <entry file="file://$PROJECT_DIR$/business/springboot-demo/springboot-mybatisplus-demo/src/main/java/com/mycode/SpringbootMybatisplusDemoApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/concurrent-demo/target/classes/com/example/jmm/VolatileVisibilitySample.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/jmm/VolatileReOrderSample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1181">
+        <state relative-caret-position="162">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/jmm/VolatileVisibilitySample.java">
+    <entry file="file://$PROJECT_DIR$/business/springboot-demo/springboot-test/src/main/java/com/example/demo/DemoApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-190">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="135">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/synchronize/A.java">
+    <entry file="file://$PROJECT_DIR$/business/springboot-demo/springboot-actuator-demo/src/main/java/com/example/demo/DemoApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="270">
+          <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/thread/DeadThreadTest.java">
+    <entry file="file://$PROJECT_DIR$/business/jvm-full-gc/src/test/java/com/example/demo/ApplicationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-183">
-          <caret line="10" column="49" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="49" />
+        <state relative-caret-position="567">
+          <caret line="31" column="39" lean-forward="false" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/queue/MovieTiket.java">
+    <entry file="file://$PROJECT_DIR$/business/jvm-full-gc/src/main/java/com/example/demo/IndexController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="331">
+          <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/queue/DelayedQueueTest.java">
+    <entry file="file://$PROJECT_DIR$/business/jvm-full-gc/src/main/java/com/example/demo/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="840">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="e#1301#1302#0" expanded="false" />
+            <element signature="e#1363#1364#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/aqs/template/LockTemplete.java">
+    <entry file="file://$PROJECT_DIR$/business/jvm-demo/src/main/java/com/example/stack/Math2.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-358">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="1053">
+          <caret line="39" column="37" lean-forward="false" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/concurrent-demo/src/main/java/com/example/Test.java">
+    <entry file="file://$PROJECT_DIR$/business/jvm-demo/src/main/java/com/example/stack/Math.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="23" column="37" lean-forward="false" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/jvm-demo/src/main/java/com/example/stack/Math.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="729">
+          <caret line="27" column="31" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/jvm-demo/src/main/java/com/example/jvm/TestJDKClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="16" column="86" lean-forward="false" selection-start-line="16" selection-start-column="86" selection-end-line="16" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/jvm-demo/src/main/java/com/example/jvm/MyClassLoaderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="837">
+          <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/jvm-demo/src/main/java/com/example/stack/OOMTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/jvm-demo/src/main/java/com/example/gc/GCTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/springcloud-alibaba/nacos-order-center/HELP.md" />
+    <entry file="file://$PROJECT_DIR$/business/jvm-demo/src/main/java/com/example/stack/HeapTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="601">
+          <caret line="23" column="29" lean-forward="false" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/springcloud-alibaba/nacos-order-center/src/main/java/com/example/demo/DemoApplication.java" />
+    <entry file="file://$PROJECT_DIR$/business/springcloud-alibaba/nacos-order-center/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/business/springboot-demo/springboot-test/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commom-tool/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/springcloud-alibaba/nacos-client-order/src/test/java/com/zj/nacosclientorder/NacosClientOrderApplicationTests.java" />
+    <entry file="file://$PROJECT_DIR$/business/springboot-demo/springboot-test/src/test/java/com/example/demo/DemoApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="21" column="5" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="21" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commom-tool/base-mysql/base-mysql.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/springboot-demo/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
-          <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="21" />
+          <caret line="16" column="17" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="16" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/jvm-demo/pom.xml">
+    <entry file="file://$PROJECT_DIR$/commom-tool/base-mysql/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1461,48 +1555,182 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/concurrent-demo/target/classes/com/example/Test.class">
+    <entry file="file://$PROJECT_DIR$/business/springcloud-alibaba/common-dao/src/main/java/com/zj/config.java" />
+    <entry file="file://$PROJECT_DIR$/business/springcloud-alibaba/common-dao/src/main/java/com/zj/entity/test.java" />
+    <entry file="file://$PROJECT_DIR$/business/springcloud-alibaba/common-dao/src/main/java/com/zj/entity/po/PayInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/jvm-demo/src/main/java/com/example/common/User.java">
+    <entry file="file://$PROJECT_DIR$/business/springcloud-alibaba/common-dao/src/main/java/com/zj/entity/po/ProductInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="24" column="14" lean-forward="false" selection-start-line="23" selection-start-column="29" selection-end-line="24" selection-end-column="14" />
-          <folding>
-            <element signature="e#249#250#0" expanded="true" />
-            <element signature="e#294#295#0" expanded="true" />
-            <element signature="e#326#327#0" expanded="true" />
-            <element signature="e#371#372#0" expanded="true" />
-            <element signature="e#397#398#0" expanded="true" />
-            <element signature="e#462#463#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/jvm-demo/src/main/java/com/example/common/User1.java" />
-    <entry file="file://$PROJECT_DIR$/business/jvm-demo/src/main/java/com/example/jvm/TestJDKClassLoader.java">
+    <entry file="file://$PROJECT_DIR$/business/springcloud-alibaba/common-dao/src/main/java/com/zj/entity/po/OrderInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="16" column="86" lean-forward="false" selection-start-line="16" selection-start-column="86" selection-end-line="16" selection-end-column="86" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/jvm-demo/src/main/java/com/example/jvm/MyClassLoaderTest.java">
+    <entry file="file://$PROJECT_DIR$/business/springcloud-alibaba/common-dao/src/main/java/com/zj/dao/ProductInfoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/springcloud-alibaba/common-dao/src/main/java/com/zj/dao/PayInfoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/springcloud-alibaba/common-dao/src/main/resources/mybatis/mapper/PayInfoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/springcloud-alibaba/common-dao/src/main/resources/mybatis/mapper/ProductInfoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
-          <caret line="29" column="33" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="33" />
+          <caret line="17" column="33" lean-forward="false" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/springcloud-alibaba/common-dao/src/main/resources/mybatis/mapper/OrderInfoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/springcloud-alibaba/common-dao/src/main/resources/mybatis/MyBatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/springcloud-alibaba/common-dao/src/main/java/com/zj/dao/OrderInfoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commom-tool/base-mybatisplus-datasources/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-479">
+          <caret line="18" column="37" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="34" column="24" lean-forward="false" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/springcloud-alibaba/common-dao/src/main/java/com/zj/config/SpringDruidConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="24" column="40" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/springcloud-alibaba/common-dao/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/springcloud-alibaba/common-dao/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/springcloud-alibaba/nacos-client-order/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commom-tool/base-mybatisplus-datasources/src/main/resources/config/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/springcloud-alibaba/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1026">
+          <caret line="38" column="21" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="38" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/springcloud-alibaba/common-dao/src/main/java/com/zj/config/DruidDataSourceProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="20" column="32" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/springcloud-alibaba/common-dao/READ.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/springcloud-alibaba/nacos-client-order/src/main/java/com/zj/nacosclientorder/NacosClientOrderApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#407#408#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/springcloud-alibaba/nacos-client-order/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="55" lean-forward="true" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1559,11 +1787,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>base-mybatisplus-datasources</last-edited>
+          <last-edited>jvm-full-gc</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

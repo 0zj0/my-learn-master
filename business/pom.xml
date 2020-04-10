@@ -17,6 +17,7 @@
         <module>concurrent-demo</module>
         <module>jvm-demo</module>
         <module>jvm-full-gc</module>
+        <module>springcloud-alibaba</module>
     </modules>
 
 </project>

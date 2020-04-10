@@ -7,15 +7,19 @@
       <module fileurl="file://$PROJECT_DIR$/commom-tool/base-tool/base-tool.iml" filepath="$PROJECT_DIR$/commom-tool/base-tool/base-tool.iml" />
       <module fileurl="file://$PROJECT_DIR$/business/business.iml" filepath="$PROJECT_DIR$/business/business.iml" />
       <module fileurl="file://$PROJECT_DIR$/commom-tool/commom-tool.iml" filepath="$PROJECT_DIR$/commom-tool/commom-tool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business/springcloud-alibaba/common-dao/common-dao.iml" filepath="$PROJECT_DIR$/business/springcloud-alibaba/common-dao/common-dao.iml" />
       <module fileurl="file://$PROJECT_DIR$/business/concurrent-demo/concurrent-demo.iml" filepath="$PROJECT_DIR$/business/concurrent-demo/concurrent-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/business/design-demo/design-demo.iml" filepath="$PROJECT_DIR$/business/design-demo/design-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/business/jvm-demo/jvm-demo.iml" filepath="$PROJECT_DIR$/business/jvm-demo/jvm-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business/jvm-full-gc/jvm-full-gc.iml" filepath="$PROJECT_DIR$/business/jvm-full-gc/jvm-full-gc.iml" />
       <module fileurl="file://$PROJECT_DIR$/my-learn-master.iml" filepath="$PROJECT_DIR$/my-learn-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business/springcloud-alibaba/nacos-client-order/nacos-client-order.iml" filepath="$PROJECT_DIR$/business/springcloud-alibaba/nacos-client-order/nacos-client-order.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-annotation/spring-annotation.iml" filepath="$PROJECT_DIR$/spring-annotation/spring-annotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/business/springboot-demo/springboot-actuator-demo/springboot-actuator-demo.iml" filepath="$PROJECT_DIR$/business/springboot-demo/springboot-actuator-demo/springboot-actuator-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/business/springboot-demo/springboot-demo.iml" filepath="$PROJECT_DIR$/business/springboot-demo/springboot-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/business/springboot-demo/springboot-mybatisplus-demo/springboot-mybatisplus-demo.iml" filepath="$PROJECT_DIR$/business/springboot-demo/springboot-mybatisplus-demo/springboot-mybatisplus-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/business/springboot-demo/springboot-test/springboot-test.iml" filepath="$PROJECT_DIR$/business/springboot-demo/springboot-test/springboot-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business/springcloud-alibaba/springcloud-alibaba.iml" filepath="$PROJECT_DIR$/business/springcloud-alibaba/springcloud-alibaba.iml" />
     </modules>
   </component>
 </project>

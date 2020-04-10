@@ -9,9 +9,12 @@
         <module name="base-mybatisplus-datasources" />
         <module name="base-mysql" />
         <module name="base-tool" />
+        <module name="common-dao" />
         <module name="concurrent-demo" />
         <module name="design-demo" />
         <module name="jvm-demo" />
+        <module name="jvm-full-gc" />
+        <module name="nacos-client-order" />
         <module name="springboot-actuator-demo" />
         <module name="springboot-demo" />
         <module name="springboot-mybatisplus-demo" />
@@ -25,17 +28,22 @@
       <module name="base-tool" target="1.8" />
       <module name="business" target="1.8" />
       <module name="commom-tool" target="1.8" />
+      <module name="common-dao" target="1.8" />
       <module name="concurrent-demo" target="1.8" />
       <module name="design-demo" target="1.8" />
       <module name="designMode" target="1.8" />
       <module name="jvm-demo" target="1.8" />
+      <module name="jvm-full-gc" target="1.8" />
       <module name="my-learn-master" target="1.8" />
+      <module name="nacos-client-order" target="1.8" />
+      <module name="nacos-order-center" target="1.8" />
       <module name="spring-annotation" target="1.8" />
       <module name="springboot-actuator-demo" target="1.8" />
       <module name="springboot-demo" target="1.8" />
       <module name="springboot-mybatisplus-demo" target="1.8" />
       <module name="springboot-test" target="1.8" />
       <module name="springboot-test-demo" target="1.8" />
+      <module name="springcloud-alibaba" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
