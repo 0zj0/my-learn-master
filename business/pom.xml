@@ -18,6 +18,7 @@
         <module>jvm-demo</module>
         <module>jvm-full-gc</module>
         <module>springcloud-alibaba</module>
+        <module>weblogic_zookeeper</module>
     </modules>
 
 </project>
