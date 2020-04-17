@@ -3,9 +3,9 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: localhost:8848
-        group: dev
-        namespace: 98c8e701-bdd7-4e17-a9d2-55ee3e051da8
+        server-addr: 139.9.222.86:8848
+        #group: dev
+        #namespace: 98c8e701-bdd7-4e17-a9d2-55ee3e051da8
   application:
     name: order-center
 
