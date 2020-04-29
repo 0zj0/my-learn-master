@@ -33,7 +33,8 @@ public class CustomizeFilterConsumer {
         consumer.subscribe("topic_sync_producer_d","com.example.demo.filter.MessageFilterImpl",filterCode);*/
 
         //失败
-        String filterCode = MixAll.file2String("F:\\MyGit\\my-learn-master\\business\\springboot-demo\\springboot-rocketmq-base\\src\\main\\java\\com\\example\\demo\\filter\\MessageFilterImpl.java");
+        String filterCode = MixAll.file2String("D:\\code\\git\\my-learn-master\\business\\springboot-demo\\springboot-rocketmq-base\\src\\main\\java\\com\\example\\demo\\filter\\MessageFilterImpl.java");
+        System.out.println(filterCode);
         consumer.subscribe("topic_sync_producer_d","com.example.demo.filter.MessageFilterImpl",filterCode);
 
         consumer.registerMessageListener(new MessageListenerConcurrently() {
