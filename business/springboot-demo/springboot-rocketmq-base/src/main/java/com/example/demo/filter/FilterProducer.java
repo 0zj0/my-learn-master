@@ -1,4 +1,4 @@
-package com.example.demo.broadcast;
+package com.example.demo.filter;
 
 import org.apache.rocketmq.client.exception.MQBrokerException;
 import org.apache.rocketmq.client.exception.MQClientException;
@@ -11,30 +11,30 @@ import org.apache.rocketmq.remoting.exception.RemotingException;
 import java.io.UnsupportedEncodingException;
 
 /**
- * @author 张杰
- * @date 2020/4/28 21:43
+ * 生产者 -- 生成可过滤消息
+ * @author zhangjie
+ * @date 2020/4/29 14:42
  */
-public class Producer {
+public class FilterProducer {
 
-    public static void main(String[] args) throws MQClientException, RemotingException, InterruptedException, MQBrokerException, UnsupportedEncodingException {
-        //Instantiate with a producer group name. 初始化一个生产者组
+    public static void main(String[] args) throws MQClientException, UnsupportedEncodingException, RemotingException, InterruptedException, MQBrokerException {
         DefaultMQProducer producer = new DefaultMQProducer("zj_one_producter_group");
-
-        //设置名称服务
         producer.setNamesrvAddr("139.9.222.86:9876");
         producer.setSendMsgTimeout(10000);
-
         producer.start();
 
-        for (int i = 0; i < 4; i++) {
-            //声明消息
-            Message msg = new Message("topic_sync_producer_c", "TAGA", "key_TAGA", ("RocketMQ MSG TAGA NO"+i).getBytes(RemotingHelper.DEFAULT_CHARSET));
-
-            //同步发送：会等待发送结果后才返回
-            SendResult sendResult = producer.send(msg);
-
+        for(int i=0;i < 10;i ++){
+            Message message = new Message("topic_sync_producer_d","tag_filter",("Hello RocketMQ "+i).getBytes(RemotingHelper.DEFAULT_CHARSET));
+            message.putUserProperty("a",String.valueOf(i));
+            if(i % 2 ==0){
+                message.putUserProperty("b","1");
+            }else{
+                message.putUserProperty("b","2");
+            }
+            SendResult sendResult = producer.send(message);
             System.out.printf("%s%n", sendResult);
         }
+
         producer.shutdown();
     }
 }

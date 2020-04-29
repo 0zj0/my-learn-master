@@ -39,7 +39,7 @@ public class AsyncProducer {
         final CountDownLatch countDownLatch = new CountDownLatch(messageCount);
         for (int i = 0; i < messageCount; i++) {
             final int index = i;
-            Message msg = new Message("topic_async_producer","tag_async_producer","tag",("RocketMQ Producer Async SendMsg").getBytes(RemotingHelper.DEFAULT_CHARSET));
+            Message msg = new Message("topic_async_producer","tag_async_producer","key_async_producer",("RocketMQ Producer Async SendMsg").getBytes(RemotingHelper.DEFAULT_CHARSET));
             //消息发送成功后，执行回调函数
             producer.send(msg, new SendCallback() {
                 @Override
