@@ -1,0 +1,47 @@
+controller:
+    @Api
+        tags	API分组标签。具有相同标签的API将会被归并在一组内展示。
+        value	如果tags没有定义，value将作为Api的tags使用
+        description	API的详细描述，在1.5.X版本之后不再使用，但实际发现在2.0.0版本中仍然可以使用
+
+        demo:@Api(tags = "定时任务")
+
+RequestMethod:接口层
+    @ApiOperation
+        value	对操作的简单说明，长度为120个字母，60个汉字。
+        notes	对操作的详细说明。
+        httpMethod	HTTP请求的动作名，可选值有："GET", "HEAD", "POST", "PUT", "DELETE", "OPTIONS" and "PATCH"。
+        code	默认为200，有效值必须符合标准的HTTP Status Code Definitions。
+
+        demo:@ApiOperation(value = "获取定时任务列表",httpMethod = "POST")
+
+    @ApiImplicitParams: 注解ApiImplicitParam的容器类，以数组方式存储。
+
+    @ApiImplicitParam :对API的单一参数进行注解。虽然注解@ApiParam同JAX-RS参数相绑定，但这个@ApiImplicitParam注解可以以统一的方式定义参数列表，也是在Servelet及非JAX-RS环境下，唯一的方式参数定义方式。注意这个注解@ApiImplicitParam必须被包含在注解
+        name	参数名称
+        value	参数的简短描述
+        required	是否为必传参数
+        dataType	参数类型，可以为类名，也可以为基本类型（String，int、boolean等）
+        paramType	参数的传入（请求）类型，可选的值有path, query, body, header or form。
+
+    @ApiParam:增加对参数的元信息说明。这个注解只能被使用在JAX-RS 1.x/2.x的综合环境下。其主要的属性有：
+        required	是否为必传参数
+        value	参数简短说明
+
+    @ApiResponses: 注解@ApiResponse的包装类，数组结构。即使需要使用一个@ApiResponse注解，也需要将@ApiResponse注解包含在注解@ApiResponses内。
+
+    @ApiResponse:描述一个操作可能的返回结果。
+
+Model 实体类
+    @ApiModel: 提供对Swagger model额外信息的描述
+        value	model的别名，默认为类名
+        description	model的详细描述
+
+        demo：@ApiModel(value = "任务入参")
+
+    @ApiModelProperty: 对model属性的注解
+        value	属性简短描述
+        example	属性的示例值
+        required	是否为必须值
+
+        demo:@ApiModelProperty(value = "触发器名称",example = "codeGenerateTrigger")
