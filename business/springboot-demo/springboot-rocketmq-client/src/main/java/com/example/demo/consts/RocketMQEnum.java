@@ -1,4 +1,4 @@
-package com.example.demo.demo.consts;
+package com.example.demo.consts;
 
 /**
  * @author 张杰

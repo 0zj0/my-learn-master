@@ -1,4 +1,4 @@
-package com.example.demo.demo.producer;
+package com.example.demo.producer;
 
 import com.example.demo.result.Result;
 import io.swagger.annotations.Api;
@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @Api(tags = "生产者模块")
 public class ProducerController {
-
 
     @RequestMapping("test")
     @ApiOperation(value = "swgger测试",httpMethod = "GET")
