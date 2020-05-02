@@ -43,4 +43,9 @@ public class Result<T> {
         this.code = resultState.getCode();
         this.message = resultState.getMessage();
     }
+
+    public Result setInfo(T info) {
+        this.info = info;
+        return this;
+    }
 }

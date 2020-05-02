@@ -9,5 +9,11 @@ public class RocketMQConsts {
     /** rocketmq 事务发送topic ***/
     public static final String TOPIC_TRANS = "spring-transaction-topic";
 
+    /** rocketmq 测试发送topic ***/
+    public static final String TOPIC_TEST = "springboot-test-topic";
+
+    /** rocketmq 事务发送group ***/
+    public static final String TX_PGROUP_NAME = "myTxProducerGroup";
+
 
 }
