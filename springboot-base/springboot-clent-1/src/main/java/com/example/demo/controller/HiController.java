@@ -24,7 +24,7 @@ public class HiController {
     public String hello(@RequestParam String name){
         System.out.println(System.currentTimeMillis()+"********0********");
         try {
-            Thread.sleep(20000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

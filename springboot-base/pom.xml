@@ -16,6 +16,20 @@
         <module>springboot-server</module>
         <module>springboot-clent-1</module>
         <module>springboot-feign</module>
+        <module>springboot-zuul</module>
+        <module>springboot-sleuth</module>
     </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>
