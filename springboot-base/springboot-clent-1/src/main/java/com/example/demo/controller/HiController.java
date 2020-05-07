@@ -20,4 +20,16 @@ public class HiController {
         return "hi " + name + ", i am from port:" + port;
     }
 
+    @GetMapping("/hello")
+    public String hello(@RequestParam String name){
+        System.out.println(System.currentTimeMillis()+"********0********");
+        try {
+            Thread.sleep(20000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println("********1********");
+        return "hello " + name + ", i am from port:" + port;
+    }
+
 }
