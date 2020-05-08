@@ -18,6 +18,7 @@
         <module>springboot-feign</module>
         <module>springboot-zuul</module>
         <module>springboot-sleuth</module>
+        <module>springboot-admin</module>
     </modules>
 
     <dependencyManagement>
