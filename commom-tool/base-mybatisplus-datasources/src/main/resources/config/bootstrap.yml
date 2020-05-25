@@ -7,13 +7,13 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     #数据库配置
     db1:
-      url: jdbc:mysql://192.168.4.98:3306/test1?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf-8&autoReconnect=true
+      url: jdbc:mysql://139.9.222.86:3306/test1?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf-8&autoReconnect=true
       #url: jdbc:mysql://192.168.4.98:3306/test1?useUnicode=true&characterEncoding=utf8&useSSL=false
       username: root
       password: 123456
       driver-class-name: com.mysql.cj.jdbc.Driver
     db2:
-      url: jdbc:mysql://192.168.4.98:3306/test2?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf-8&autoReconnect=true
+      url: jdbc:mysql://139.9.222.86:3306/test2?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf-8&autoReconnect=true
       #url: jdbc:mysql://192.168.4.98:3306/test2?useUnicode=true&characterEncoding=utf8&useSSL=false&allowMutiQueries=true
       username: root
       password: 123456

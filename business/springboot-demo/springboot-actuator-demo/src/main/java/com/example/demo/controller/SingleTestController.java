@@ -4,8 +4,7 @@ import com.example.entity.ResponseVo;
 import com.example.entity.db1.po.SysUserPO;
 import com.example.service.db1.ISysUserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -23,10 +22,14 @@ public class SingleTestController {
     @RequestMapping("/db1")
     public ResponseVo db1Test(){
         List<SysUserPO> list = sysUserService.listAll();
-        list.forEach(sysUserPO -> {
+        /*list.forEach(sysUserPO -> {
             System.out.println(sysUserPO.toString());
-        });
-        return ResponseVo.success();
+        });*/
+        return ResponseVo.success(list);
     }
 
+    @GetMapping("/{id:\\d+}")
+    public ResponseVo get(@PathVariable int id){
+        return ResponseVo.success(sysUserService.getById(id));
+    }
 }
