@@ -49,5 +49,4 @@ public class ExecutorSample {
         }
         System.out.println(executor.isShutdown()+","+executor.isTerminated());
     }
-
 }

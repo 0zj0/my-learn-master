@@ -20,16 +20,13 @@ import java.util.Map;
  */
 public class MpGenenator {
 
-    final static String DIR_PATH = "F://generators4";
+    final static String DIR_PATH = "F://generators5";
     final static String MODULE_NAME = "";
     final static String PARENT = "com.example";
-    /*final static String USER_NAME = "doyd";
-    final static String PASSWORD = "doyd1913";
-    final static String URL = "jdbc:mysql://192.168.4.30:3306/jkb_vip?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf-8&autoReconnect=true";
-*/
+
     final static String USER_NAME = "root";
     final static String PASSWORD = "123456";
-    final static String URL = "jdbc:mysql://192.168.4.98:3306/test2?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf-8&autoReconnect=true";
+    final static String URL = "jdbc:mysql://139.9.222.86:3306/test1?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf-8&autoReconnect=true";
 
     public static void initMpGenenator(){
         AutoGenerator mpg = new AutoGenerator();
