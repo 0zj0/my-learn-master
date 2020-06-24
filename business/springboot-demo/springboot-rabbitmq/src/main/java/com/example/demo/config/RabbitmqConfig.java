@@ -43,6 +43,11 @@ public class RabbitmqConfig {
     private String virtualHost;
     /**连接超时时间*/
     private int connectionTimeout;
+    /**连接超时时间*/
+    private boolean publisherConfirms;
+    /**连接超时时间*/
+    private boolean publisherReturns;
+
 
     /**
      * 设置rabbitmq 连接工厂配置
@@ -56,6 +61,8 @@ public class RabbitmqConfig {
         connectionFactory.setPassword(password);
         connectionFactory.setVirtualHost(virtualHost);
         connectionFactory.setCloseTimeout(connectionTimeout);
+        connectionFactory.setPublisherConfirms(publisherConfirms);
+        connectionFactory.setPublisherReturns(publisherReturns);
         return connectionFactory;
     }
 

@@ -114,6 +114,10 @@ public final class ValidationUtil {
         throw new ValidException(SystemCodeEnum.ERROR.getCode(), tip);
     }
 
+    public static void throwException(String tip) {
+        throw new ValidException(SystemCodeEnum.ERROR.getCode(), tip);
+    }
+
     /**
      * 校验最小取值
      * @param val 校验值
