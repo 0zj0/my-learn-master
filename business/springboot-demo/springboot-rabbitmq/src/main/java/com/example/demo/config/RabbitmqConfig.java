@@ -88,9 +88,8 @@ public class RabbitmqConfig {
     @Bean
     public RabbitAdmin rabbitAdmin(){
         RabbitAdmin rabbitAdmin = new RabbitAdmin(connectionFactory());
+        rabbitAdmin.setAutoStartup(true);
         this.exchangeQueueBind(rabbitAdmin);
-       /* Exchange exchange = new FanoutExchange(ExchangeConsts.EX_CHANGE_TEST_ONE,true,false);
-        rabbitAdmin.declareExchange(exchange);*/
         return rabbitAdmin;
     }
 
