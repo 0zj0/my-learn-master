@@ -15,7 +15,8 @@ public class MyBeanFactoryPostProcessor implements BeanFactoryPostProcessor {
 
     @Override
     public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) throws BeansException {
-        GenericBeanDefinition beanDefinition = (GenericBeanDefinition) beanFactory.getBeanDefinition("interService2");
+        //GenericBeanDefinition beanDefinition = (GenericBeanDefinition) beanFactory.getBeanDefinition("interService2");
+        GenericBeanDefinition beanDefinition = (GenericBeanDefinition) beanFactory.getBeanDefinition("interService");
         System.out.println("扫描注册成功完成后，spring自动调用次方法");
         System.out.println(beanDefinition.getDescription());
         beanDefinition.setDescription("后置处理器修改描述");

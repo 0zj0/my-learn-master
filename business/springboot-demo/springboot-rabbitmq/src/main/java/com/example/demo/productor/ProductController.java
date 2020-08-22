@@ -26,7 +26,7 @@ public class ProductController {
     @RequestMapping("test")
     @ApiOperation(value = "testone_one 发送消息",httpMethod = "POST")
     public Result msgSend(){
-
+        log.info("system.property:{}",System.getProperty("test:001"));
         try {
             rabbitTemplate.convertAndSend(ExchangeConsts.EX_CHANGE_TEST_ONE+"1","",1);
         } catch (AmqpException e) {
@@ -38,7 +38,8 @@ public class ProductController {
     @RequestMapping("test2")
     @ApiOperation(value = "testone_one 发送消息confirm",httpMethod = "POST")
     public Result msgSendByConfirm(){
-
+        System.setProperty("test:001","369");
+        log.info("system.property:{}",System.getProperty("test:001"));
         System.out.println("return:"+rabbitTemplate.isReturnListener());
         System.out.println("confirm:"+rabbitTemplate.isConfirmListener());
 

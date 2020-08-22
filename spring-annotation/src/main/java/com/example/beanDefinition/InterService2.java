@@ -1,7 +1,6 @@
 package com.example.beanDefinition;
 
 import lombok.Data;
-import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * @author zhangjie
@@ -9,9 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
  */
 @Data
 public class InterService2 {
-
-    @Autowired
-    private InterService interService;
 
     private String name;
 
