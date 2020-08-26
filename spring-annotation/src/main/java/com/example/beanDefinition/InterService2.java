@@ -9,8 +9,8 @@ import lombok.Data;
 @Data
 public class InterService2 {
 
-    private String name;
+    private String personName;
 
-    private int age;
+    private int personAge;
 
 }
