@@ -16,7 +16,7 @@
         <module>base-mysql</module>
         <module>base-mybatisplus-datasources</module>
         <module>base-common</module>
+        <module>base-redis</module>
     </modules>
-
 
 </project>
