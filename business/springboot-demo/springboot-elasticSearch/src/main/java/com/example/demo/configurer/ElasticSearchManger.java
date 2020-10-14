@@ -10,11 +10,10 @@ import org.elasticsearch.common.transport.TransportAddress;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.transport.client.PreBuiltTransportClient;
 import org.springframework.beans.factory.InitializingBean;
-import org.springframework.stereotype.Service;
 
 import java.net.InetAddress;
 
-@Service
+//@Service
 @Slf4j
 public class ElasticSearchManger implements InitializingBean {
 
@@ -45,6 +44,7 @@ public class ElasticSearchManger implements InitializingBean {
         SearchResponse response = elasticSearchManger.client.prepareSearch("bbg_goods").setTypes("item_loc")
                 .setSearchType(SearchType.DFS_QUERY_THEN_FETCH).setQuery(QueryBuilders.queryStringQuery("item_desc:格力"))
                 .setFrom(0).setSize(10).setExplain(false).get();
+        System.out.println("***********");
         System.out.println(response);
     }
 }
