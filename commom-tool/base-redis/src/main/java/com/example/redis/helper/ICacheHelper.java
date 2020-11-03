@@ -685,4 +685,21 @@ public interface ICacheHelper {
     long ttl(String key);
 
     long removeByScore(String key, long min, long max);
+
+    /**
+     * bitmap 设置值
+     * @param key
+     * @param offset
+     * @param value
+     * @return
+     */
+    boolean setBit(String key,long offset,boolean value);
+
+    /**
+     * 获取 bitmap 指定偏移量的值
+     * @param key
+     * @param offset
+     * @return
+     */
+    boolean getBit(String key, long offset);
 }

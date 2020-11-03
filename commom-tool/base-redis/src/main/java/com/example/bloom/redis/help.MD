@@ -1,0 +1,5 @@
+基于redis的布隆过滤器使用：
+1. 在BloomFilterConfig 的afterPropertiesSet 方法中将要进行过滤判断的数据查询出来，然后循环调用 BloomRedisUtil定义的bean 的addByBloomFilter 方法，将数据添加到redis的bitmap 中；
+
+2. 在定义的过滤器中，或者业务处理中，获取需要判断的键值，调用BloomRedisUtil定义的bean的
+includeByBloomFilter方法进行判断。false表示数据一定不存在；true 表示数据可能存在；

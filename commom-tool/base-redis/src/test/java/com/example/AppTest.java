@@ -52,7 +52,7 @@ public class AppTest
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     } finally {
-                        //若锁已超时释放，已报异常
+                        //若锁已超时释放，会报异常
                         RedissLockUtil.unlock(lock);
                         System.out.println("后:thread:"+Thread.currentThread().getName()+",n:"+n+",time:"+long2Str(System.currentTimeMillis(),"yyyy-MM-dd HH:mm:ss:S"));
                     }

@@ -872,4 +872,16 @@ public class RedisHelper implements ICacheHelper {
         return redisTemplate.opsForZSet().removeRangeByScore(key,min,max);
     }
 
+    @Override
+    public boolean setBit(String key, long offset, boolean value) {
+        Boolean result = redisTemplate.opsForValue().setBit(key, offset, value);
+        return ValueUtil.getValue(result);
+    }
+
+    @Override
+    public boolean getBit(String key, long offset) {
+        Boolean result = redisTemplate.opsForValue().getBit(key, offset);
+        return ValueUtil.getValue(result);
+    }
+
 }
