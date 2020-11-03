@@ -20,6 +20,7 @@
         <module>springcloud-alibaba</module>
         <module>weblogic_zookeeper</module>
         <module>weblogic_zookeeper</module>
+        <module>algorithm-demo</module>
     </modules>
 
 </project>
