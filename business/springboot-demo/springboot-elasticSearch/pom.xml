@@ -14,27 +14,57 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <elasticsearch.version>6.6.0</elasticsearch.version>
+        <!--<elasticsearch.version>6.6.0</elasticsearch.version>-->
     </properties>
 
     <dependencies>
 
-        <!-- ES -->
+        <!-- 导入基础依赖-->
         <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>base-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>base-redis</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>base-tool</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!-- springcloud 集成 elasticSearch-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
+            <version>2.1.6.RELEASE</version>
+        </dependency>
+
+        <!-- ES -->
+       <!-- <dependency>
             <groupId>org.elasticsearch</groupId>
             <artifactId>elasticsearch</artifactId>
-        </dependency>
-        <dependency>
+        </dependency>-->
+        <!--<dependency>
             <groupId>org.elasticsearch.client</groupId>
             <artifactId>transport</artifactId>
-        </dependency>
-        <dependency>
+        </dependency>-->
+       <!-- <dependency>
             <groupId>org.elasticsearch.client</groupId>
             <artifactId>elasticsearch-rest-client</artifactId>
         </dependency>
         <dependency>
             <groupId>org.elasticsearch.client</groupId>
             <artifactId>elasticsearch-rest-high-level-client</artifactId>
+            <>6.6.0
+        </dependency>-->
+        <dependency>
+            <groupId>org.elasticsearch.client</groupId>
+            <artifactId>elasticsearch-rest-high-level-client</artifactId>
+            <version>6.6.0</version>
         </dependency>
 
         <!-- mybatis-plus -->

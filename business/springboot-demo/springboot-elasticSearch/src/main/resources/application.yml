@@ -10,6 +10,7 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://139.9.222.86:3306/es-test?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf-8&autoReconnect=true
+    #url: jdbc:mysql://localhost:3306/es-test?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf-8&autoReconnect=true
     username: root
     password: 123456
     druid:
@@ -31,5 +32,51 @@ spring:
       pool-prepared-statements: false
       max-pool-prepared-statement-per-connection-size: 20
       filters: stat
+#ElasticSearch start
+  data:
+    elasticsearch:
+      repositories:
+        #开启 Elasticsearch 仓库(默认值:true)
+        enabled: true
+      cluster-name: my-es
+      cluster-nodes: 139.9.222.86:19300
 
+# mybatisplus 配置：
+mybatis-plus:
+  mapper-locations: classpath*:mapper/*.xml
+  type-aliases-package: com.example.demo.entity
+  configuration:
+    #数据库 下划线命名方式 a_column 转为 java的 驼峰式命名方式aColumn
+    map-underscore-to-camel-case: true
+    call-setters-on-nulls: true
+    # defaultEnumTypeHandler 枚举将统一使用指定处理器进行处理
+    # 值说明：
+    # org.apache.ibatis.type.EnumTypeHandler : 默认值， 存储枚举的名称
+    # org.apache.ibatis.type.EnumOrdinalTypeHandler : 存储枚举的索引
+    # com.baomidou.mybatisplus.extension.handlers.EnumTypeHandler : 枚举类需要实现IEnum接口或字段标记@EnumValue注解.
+    defaultEnumTypeHandler: com.baomidou.mybatisplus.extension.handlers.EnumTypeHandler
+  global-config:
+    db-config:
+      #是否开启大写命名，默认不开启
+      capital-mode: false
 
+      # 逻辑删除，在实体类相应的删除状态字段加上@TableLogic注解即可
+      # 逻辑已删除值(默认为 1)
+      #logic-delete-value: 1
+      # 逻辑未删除值(默认为 0)
+      #logic-not-delete-value: 0
+
+      #主键类型
+      #AUTO(0): 数据库ID自增
+      #NONE(1): 无主键
+      #INPUT(2): 用户输入ID
+      #ID_WORKER(3): 默认值，全局唯一ID (数字类型唯一ID)
+      #UUID(4): 全局唯一ID UUID
+      #ID_WORKER_STR(5): 全局唯一ID (字符串类型唯一ID)
+      id-type: AUTO
+      #字段策略
+      #IGNORED: 忽略判断
+      #NOT_NULL: 非 NULL 判断
+      #NOT_EMPTY: 非空判断
+      #DEFAULT: 默认策略
+      field-strategy: NOT_NULL

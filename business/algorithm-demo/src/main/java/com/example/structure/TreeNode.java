@@ -95,6 +95,7 @@ public class TreeNode {
      * 输出某个文件夹下所有文件名称(可以有子文件夹)---用先序遍历实现：
      *      如果是文件夹，先输出文件夹名，然后再依次输出该文件夹下的所有文件(包括子文件夹)，如果有子文件夹，
      * 则再进入该子文件夹，输出该子文件夹下的所有文件名。
+     * 应用场景：遍历文件夹
      * @param tree
      */
     public static void frontOrder_Recursion(TreeNode tree){
@@ -128,6 +129,7 @@ public class TreeNode {
     /**
      * 中序遍历：左->根->右
      *  从小到大输出数据---中序遍历实现
+     * 特点：顺序输出结果
      * @param tree
      */
     public static void MidenOrder_Recursion(TreeNode tree){
