@@ -1,6 +1,5 @@
 package com.example.demo.es.entity;
 
-import com.baomidou.mybatisplus.annotation.TableField;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
@@ -81,7 +80,6 @@ public class ReadBookESDTO implements Serializable {
     /**
      * 价格，分
      */
-    @TableField("price")
     private int price;
 
     /**

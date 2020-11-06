@@ -23,12 +23,13 @@
         UNIX_TIMESTAMP(update_time)*1000 as update_time,status,comment_num,category,price
     </sql>
 
-    <select id="selectByPage" resultMap="ReadBookESMap">
-         select * from read_book_pd
+    <select id="selectByPage" resultType="com.example.demo.entity.ReadBookPd">
+         select *
+         from read_book_pd
          where id > #{cacheId}
          order by id
     </select>
-    <select id="selectList2" resultType="com.example.demo.es.entity.ReadBookESDTO">
+    <select id="selectList2" resultMap="ReadBookESMap" >
          select
          <include refid="Base_Column_List" />
          from read_book_pd
