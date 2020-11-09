@@ -27,6 +27,9 @@ public enum RabbitMqBindingEnum {
     /** 测试队列 -4 -- 延时队列*/
     BIND_EX_CHANGE_TEST_FOUR_QUEUE_TEST_FOUR(ExchangeConsts.EX_CHANGE_TEST_FOUR, QueueConsts.QUEUE_TEST_FOUR, ExchangeTypes.FANOUT,"",true),
 
+    /** 测试限流交换机 **/
+    BIND_EX_CHANGE_QOS_TEST_QUEUE_QOS_TEST(ExchangeConsts.EX_CHANGE_QOS_TEST, QueueConsts.QUEUE_QOS_TEST, ExchangeTypes.DIRECT,"my.qos.directchange.key",false),
+
     ;
     /** 交换机名称 **/
     private String exchangeName;

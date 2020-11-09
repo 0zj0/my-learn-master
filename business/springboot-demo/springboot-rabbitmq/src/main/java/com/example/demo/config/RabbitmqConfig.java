@@ -2,6 +2,7 @@ package com.example.demo.config;
 
 import com.example.demo.consts.VirtualHostConsts;
 import com.example.demo.consts.emums.RabbitMqBindingEnum;
+import com.rabbitmq.http.client.Client;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.core.*;
@@ -47,7 +48,26 @@ public class RabbitmqConfig {
     private boolean publisherConfirms;
     /**连接超时时间*/
     private boolean publisherReturns;
+    /** http 管理端口*/
+    private int managementPort = 15672;
 
+    /**
+     * 配置 rabbitmq-management 端口
+     * @return
+     */
+    @Bean
+    @Qualifier("rabbitHttpClient")
+    public Client client() {
+        String uri = String.format("http://%s:%s/api/", host, managementPort);
+        Client client = null;
+        try {
+            client = new Client(uri, username, password);
+            client.getVhosts();
+        } catch (Exception e) {
+            log.error("[rabbitmq-management配置有误]请打开RabbitMQ {} 端口", managementPort, e);
+        }
+        return client;
+    }
 
     /**
      * 设置rabbitmq 连接工厂配置
@@ -61,7 +81,7 @@ public class RabbitmqConfig {
         connectionFactory.setPassword(password);
         connectionFactory.setVirtualHost(virtualHost);
         connectionFactory.setCloseTimeout(connectionTimeout);
-        connectionFactory.setPublisherConfirms(publisherConfirms);
+            connectionFactory.setPublisherConfirms(publisherConfirms);
         connectionFactory.setPublisherReturns(publisherReturns);
         return connectionFactory;
     }
@@ -74,6 +94,8 @@ public class RabbitmqConfig {
                                                                                      SimpleRabbitListenerContainerFactoryConfigurer configurer){
         SimpleRabbitListenerContainerFactory factory = new SimpleRabbitListenerContainerFactory();
         configurer.configure(factory, connectionFactory);
+        //标识每次推送多少条消息：用于限流配置
+        factory.setPrefetchCount(5);
         return factory;
     }
 

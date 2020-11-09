@@ -9,6 +9,7 @@ import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 
 /**
  * @author zhangjie
@@ -37,5 +38,42 @@ public class TestListener {
         log.info("queue:{},recordId:{}",QueueConsts.QUEUE_TEST_ONE_TWO,recordId);
         //消息确认消费，从队列移除
         channel.basicAck(message.getMessageProperties().getDeliveryTag(),false);
+    }
+
+    /**
+     * concurrency = "1-5" 设置消费队列个数，最小1个，最大5个，初始为最小个数
+     * @param recordId
+     * @param message
+     * @param channel
+     * @throws IOException
+     */
+    @RabbitListener(queues = QueueConsts.QUEUE_TEST_TWO,concurrency = "1-5")
+    public void testTwo(Integer recordId,Message message, Channel channel) throws IOException {
+        log.info("queue:{},recordId:{}",QueueConsts.QUEUE_TEST_TWO,recordId);
+        //消息确认消费，从队列移除
+        channel.basicAck(message.getMessageProperties().getDeliveryTag(),false);
+    }
+
+    /**
+     * 测试限流交换机
+     * @param body
+     * @param message
+     * @param channel
+     * @throws IOException
+     */
+    @RabbitListener(queues = QueueConsts.QUEUE_QOS_TEST,concurrency = "3-3",containerFactory = VirtualHostConsts.MY_LISTENER)
+    public void testQos(byte[] body,Message message, Channel channel) throws IOException {
+        log.info("time:{},queue:{},body:{}",getCurrentTime(),QueueConsts.QUEUE_TEST_TWO,new String(body));
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        //消息确认消费，从队列移除
+        channel.basicAck(message.getMessageProperties().getDeliveryTag(),false);
+    }
+
+    private static String getCurrentTime(){
+        return new SimpleDateFormat("yyyy-MM-dd HH:mm:ss:SSS").format(System.currentTimeMillis());
     }
 }

@@ -18,4 +18,7 @@ public class ExchangeConsts {
     /** 测试交换机 -4 */
     public static final String EX_CHANGE_TEST_FOUR = "ex.change.test.four";
 
+    /** 测试限流交换机 */
+    public static final String EX_CHANGE_QOS_TEST = "my.qos.directchange";
+
 }

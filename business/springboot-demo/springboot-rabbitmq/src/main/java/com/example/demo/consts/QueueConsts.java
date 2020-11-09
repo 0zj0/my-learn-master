@@ -20,4 +20,7 @@ public class QueueConsts {
 
     /** 测试队列 -4 */
     public static final String  QUEUE_TEST_FOUR = "queue.test.four";
+
+    /** 测试限流队列 */
+    public static final String QUEUE_QOS_TEST = "my.qos.directqueue";
 }

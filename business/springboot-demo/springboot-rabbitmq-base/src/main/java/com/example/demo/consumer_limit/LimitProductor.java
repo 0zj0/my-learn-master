@@ -28,7 +28,7 @@ public class LimitProductor {
 
         //消息体内容
         String messageBody = "hello qos ";
-        for(int i=0; i<10; i++){
+        for(int i=0; i<1000; i++){
             channel.basicPublish(exchangeName,routingKey,null,(messageBody + i).getBytes());
         }
     }

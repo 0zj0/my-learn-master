@@ -1,6 +1,7 @@
 package com.example.utils;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -83,5 +84,20 @@ public class ObjectMapperUtil {
             log.error(String.format("对象%s解析为list%s出错:{}", obj.toString(), clazz.getName()), e);
         }
         return list;
+    }
+
+    /**
+     * 使用jackson序列化对象
+     * @param origin
+     * @param defaultVal
+     * @return
+     */
+    public static String writeValueAsString(Object origin,String defaultVal){
+        try {
+            return OBJECT_MAPPER.writeValueAsString(origin);
+        } catch (JsonProcessingException ex) {
+            log.error("[对象序列化失败]origin={},defaultVal={}", origin, defaultVal, ex);
+            return defaultVal;
+        }
     }
 }
