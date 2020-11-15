@@ -74,7 +74,7 @@ public class MergeSortMain {
     public static void main(String[] args) {
         int[] arrayToSort = Utils.buildRandomIntArray(20000000);
         int[] expectedArray = Arrays.copyOf(arrayToSort, arrayToSort.length);
-
+        //返回可用处理器的Java虚拟机的数量。
         int nofProcessors = Runtime.getRuntime().availableProcessors();
 
         MergeSortMain shortestPathServiceSeq = new MergeSortMain(arrayToSort, nofProcessors);
